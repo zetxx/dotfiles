@@ -1,1 +1,3 @@
-home/.emacs.d/elpa/*
+home/.emacs.d/**/*
+!home/.emacs.d/init.el
+!home/.emacs.d/customizations/**/*
