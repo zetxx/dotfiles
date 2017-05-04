@@ -59,3 +59,5 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+;; enable projectile caching
+(setq projectile-enable-caching t)
