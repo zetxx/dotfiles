@@ -1,0 +1,6 @@
+(load-theme 'foggy-night t)
+(global-linum-mode t)
+(global-hl-line-mode t)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(nyan-mode t)
