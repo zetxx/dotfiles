@@ -55,6 +55,8 @@
 
     linum
 
+    company
+
     nyan-mode
     
     foggy-night-theme))
