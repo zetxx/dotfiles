@@ -83,3 +83,9 @@
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+;; rainbow brackets
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+;; indent guide
+(indent-guide-global-mode)
+(setq indent-guide-delay 0.05)

@@ -55,6 +55,10 @@
 
     linum
 
+    indent-guide
+    
+    rainbow-delimiters
+
     company
 
     nyan-mode
