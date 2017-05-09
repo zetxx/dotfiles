@@ -1,5 +1,5 @@
-(load "ui.el")
 (load "packages.el")
+(load "ui.el")
 (load "navigation.el")
 (load "js-html.el")
 (load "clojure.el")
