@@ -53,6 +53,10 @@
     ;; git integration
     magit
 
+    js2-mode ;melpa
+
+    tern
+
     linum
 
     indent-guide
