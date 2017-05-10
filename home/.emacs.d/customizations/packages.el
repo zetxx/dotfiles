@@ -61,6 +61,8 @@
 
     company
 
+    company-tern
+
     nyan-mode
     
     foggy-night-theme))

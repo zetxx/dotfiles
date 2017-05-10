@@ -8,3 +8,5 @@
      (require 'tagedit)
      (tagedit-add-paredit-like-keybindings)
      (add-hook 'html-mode-hook (lambda () (tagedit-mode 1)))))
+;;js autoocomplete tern
+(add-to-list 'company-backends 'company-tern)
