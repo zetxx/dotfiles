@@ -68,6 +68,8 @@
     company-tern
 
     nyan-mode
+
+    diff-hl ;; melpa install
     
     foggy-night-theme))
 
