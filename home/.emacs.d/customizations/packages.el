@@ -69,6 +69,8 @@
 
     nyan-mode
 
+    hlinum
+
     diff-hl ;; melpa install
     
     foggy-night-theme))
