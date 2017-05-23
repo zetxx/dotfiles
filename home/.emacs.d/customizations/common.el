@@ -6,6 +6,4 @@
 (show-paren-mode 1)
 (global-diff-hl-mode 1)
 (diff-hl-flydiff-mode 1)
-(set-default-font "xos4 Terminus-11")
-(set-frame-font "xos4 Terminus 11")
 (hlinum-activate)
