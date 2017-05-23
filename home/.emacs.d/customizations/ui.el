@@ -1,3 +1,4 @@
+(load "env.specific.el")
 (load-theme 'foggy-night t)
 (global-linum-mode t)
 (global-hl-line-mode t)
