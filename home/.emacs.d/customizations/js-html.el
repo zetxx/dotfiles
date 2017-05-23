@@ -1,5 +1,6 @@
+(load "env.specific.el")
 ;; tern mode
-(add-to-list 'load-path "/home/zetxx/npm/lib/node_modules/tern/emacs/")
+(add-to-list 'load-path ternjsPath)
 (autoload 'tern-mode "tern.el" nil t)
 ;; javascript / html
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))

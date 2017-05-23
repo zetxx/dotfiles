@@ -1,1 +1,1 @@
-
+(defvar ternjsPath "some_path_here")
