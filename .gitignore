@@ -3,5 +3,7 @@ home/.emacs.d/**/*
 !home/.emacs.d/customizations
 !home/.emacs.d/customizations/*
 !home/.emacs.d/customizations/**/*
-.lein/**/*
-!.lein/profiles.clj
+home/.lein/**/*
+!home/.lein/profiles.clj
+home/.config/ranger/**/*
+!home/.config/ranger/rc.conf
