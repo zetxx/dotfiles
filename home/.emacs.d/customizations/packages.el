@@ -79,6 +79,8 @@
 
     counsel
 
+    flycheck
+
     counsel-projectile
 
     swiper

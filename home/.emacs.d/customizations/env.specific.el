@@ -1,2 +1,3 @@
-(defvar ternjsPath "some_path_here")
-(defvar globalFont "some font here 10")
+(defvar ternjsPath "/home/zetxx/npm/lib/node_modules/tern/emacs/")
+(defvar globalFont "xos4 Terminus 10")
+(defvar esLintPath "path to eslint rc file")
