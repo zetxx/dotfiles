@@ -78,6 +78,8 @@
     ivy
 
     counsel
+
+    perspective
     
     counsel-projectile
 

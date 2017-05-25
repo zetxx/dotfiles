@@ -4,3 +4,4 @@
 (load "navigation.el")
 (load "js-html.el")
 (load "clojure.el")
+(load "ivy-swiper-counsel.el")
