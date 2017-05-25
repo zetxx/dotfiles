@@ -79,8 +79,6 @@
 
     counsel
 
-    perspective
-    
     counsel-projectile
 
     swiper
