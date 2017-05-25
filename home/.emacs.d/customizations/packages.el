@@ -73,7 +73,16 @@
 
     diff-hl ;; melpa install
     
-    foggy-night-theme))
+    foggy-night-theme
+    
+    ivy
+
+    counsel
+    
+    counsel-projectile
+
+    swiper
+    ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
