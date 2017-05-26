@@ -7,3 +7,6 @@
 (global-diff-hl-mode 1)
 (diff-hl-flydiff-mode 1)
 (hlinum-activate)
+;cursor
+(setq-default cursor-type 'bar)
+(set-cursor-color "#ff0000")
