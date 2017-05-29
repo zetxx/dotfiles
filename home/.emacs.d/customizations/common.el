@@ -10,3 +10,6 @@
 ;cursor
 (setq-default cursor-type 'bar)
 (set-cursor-color "#ff0000")
+;; tabs - kill tabs put spaces
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width tabWidth)
