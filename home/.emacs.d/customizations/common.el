@@ -13,3 +13,6 @@
 ;; tabs - kill tabs put spaces
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width tabWidth)
+;; terminal
+(prefer-coding-system 'utf-8)
+(setq multi-term-program "/bin/zsh")
