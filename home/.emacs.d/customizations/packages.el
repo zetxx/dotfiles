@@ -83,8 +83,6 @@
 
     counsel-projectile
 
-    multi-term
-
     swiper
     ))
 
