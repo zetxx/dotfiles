@@ -84,6 +84,8 @@
     counsel-projectile
 
     swiper
+
+    indium
     ))
 
 (dolist (p my-packages)

@@ -30,3 +30,4 @@
 (setq flycheck-eslintrc esLintPath)
 
 (flycheck-add-mode 'javascript-eslint 'js2-mode)
+(require 'indium)
