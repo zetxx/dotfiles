@@ -5,3 +5,4 @@
 (load "js-html.el")
 (load "clojure.el")
 (load "ivy-swiper-counsel.el")
+(load "key-bindings.el")

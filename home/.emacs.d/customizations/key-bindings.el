@@ -1,0 +1,1 @@
+(global-set-key (kbd "<f5> n") 'indium-run-node)
