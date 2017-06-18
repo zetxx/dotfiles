@@ -55,7 +55,7 @@
 
     js2-mode ;melpa
 
-    tern
+    tern ;npm i -g tern
 
     linum
 

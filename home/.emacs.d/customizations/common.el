@@ -15,4 +15,6 @@
 (setq-default tab-width tabWidth)
 ;; terminal
 (prefer-coding-system 'utf-8)
-(setq multi-term-program "/bin/zsh")
+(setq-default multi-term-program "/bin/zsh")
+;;prevent syncing with Xclipboard
+(setq-default x-select-enable-clipboard-manager nil)
