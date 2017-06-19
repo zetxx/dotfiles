@@ -3,9 +3,6 @@
     "node": {},
     "es_modules": {}
   },
-  "libs": [
-    "ecma5",
-    "ecma6"
-  ],
+  "libs": [],
   "ecmaVersion": 6
 }
