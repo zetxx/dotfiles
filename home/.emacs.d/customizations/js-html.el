@@ -7,6 +7,7 @@
 (add-hook 'js2-mode-hook 'company-mode)
 (add-hook 'js2-mode-hook 'tern-mode)
 (add-hook 'js2-mode-hook 'electric-pair-mode)
+(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
 ;;disable js2-mode checker
 (setq js2-mode-show-parse-errors nil)
 (setq js2-mode-show-strict-warnings nil)
