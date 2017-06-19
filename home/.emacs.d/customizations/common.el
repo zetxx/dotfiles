@@ -18,3 +18,10 @@
 (setq-default multi-term-program "/bin/zsh")
 ;;prevent syncing with Xclipboard
 (setq-default x-select-enable-clipboard-manager nil)
+
+(dolist (command '(yank yank-pop))
+   (eval `(defadvice ,command (after indent-region activate)
+            (and (not current-prefix-arg)
+                 (member major-mode '(emacs-lisp-mode lisp-mode clojure-mode js2-mode python-mode c-mode c++-mode plain-tex-mode))
+                 (let ((mark-even-if-inactive transient-mark-mode))
+                   (indent-region (region-beginning) (region-end) nil))))))
