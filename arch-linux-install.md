@@ -41,7 +41,7 @@ echo base-arch > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/l
 ```
 ## install Desktop env
 ```bash
-pacman -S xfce4 xfce4-goodies chromium xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 alsa-utils xorg-xinit networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc wget vi vim emacs mc lightdm lightdm-gtk-greeter
+pacman -S dialog xfce4 xfce4-goodies chromium xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 alsa-utils xorg-xinit networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc wget vi vim emacs mc lightdm lightdm-gtk-greeter
 ```
 ## Locales:
 ```bash
