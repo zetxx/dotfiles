@@ -117,5 +117,19 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "base-oracle",
+		"rootPath": "/store/Projects/SG/impl-base-oracle",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "port-cross-sql",
+		"rootPath": "/store/Projects/SG/dev/ut-port-cross-sql",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]

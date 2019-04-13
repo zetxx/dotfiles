@@ -153,9 +153,15 @@ bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 
+# Workspace MEDIA
+set $workspace_media MEDIA
+bindsym $mod+m workspace $workspace_media
+bindsym $mod+Shift+m move container to workspace $workspace_media
+assign [class=".*Music.*"] $workspace_media
+
 # move workspace
-bindsym $mod+m move workspace to output left
-bindsym $mod+n move workspace to output right
+bindsym $mod+Alt+n move workspace to output left
+bindsym $mod+Alt+m move workspace to output right
 
 # reload the configuration file
 #bindsym $mod+Shift+r reload
