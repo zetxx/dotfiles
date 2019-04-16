@@ -1,4 +1,6 @@
 defaults.pcm.rate_converter "speexrate_medium"
+defaults.pcm.card 0
+defaults.ctl.card 0
 
 pcm.card2 {
      type hw
