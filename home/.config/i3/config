@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title github amixer brightness battery date time layout -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 github.token=$GIT_TOKEN_STATUS github.interval=30 -t greyish-powerline
+    status_command bumblebee-status -m title github amixer brightness battery date time layout dunst -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 github.token=$GIT_TOKEN_STATUS github.interval=30 -t iceberg-powerline
     font pango:xos4 Terminus 12
     position          top
     tray_output       primary
