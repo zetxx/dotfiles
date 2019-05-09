@@ -92,7 +92,7 @@
 	},
 	{
 		"name": "router-rpi-4G",
-		"rootPath": "/store/Projects-sep/router-rpi-4G/router/app",
+		"rootPath": "/store/Projects-sep/router-rpi-4G",
 		"paths": [],
 		"group": "",
 		"enabled": true
@@ -177,6 +177,20 @@
 	{
 		"name": "impl-base-oracle",
 		"rootPath": "/store/Projects/impl-base-oracle",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "kicb-mwallet",
+		"rootPath": "/store/Projects/impl-kicb-mwallet",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "router-4g-app",
+		"rootPath": "/store/Projects-sep/router-rpi-4G/app",
 		"paths": [],
 		"group": "",
 		"enabled": true

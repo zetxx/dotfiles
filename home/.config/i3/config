@@ -272,7 +272,7 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy" &
+exec --no-startup-id xautolock -time 40 -locker "i3lock-fancy" &
 #exec --no-startup-id compton --config ~/.config/compton.conf -b &
 exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" &
 exec --no-startup-id nm-applet &
