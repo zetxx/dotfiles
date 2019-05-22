@@ -100,7 +100,7 @@
   "workbench.welcome.enabled": false,
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "seti",
   "editor.codeLens": true,
   "workbench.statusBar.visible": true,
   "editor.minimap.enabled": false,

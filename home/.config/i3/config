@@ -205,6 +205,7 @@ bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
+assign [class="Viber"] $workspace_chat
 
 # reload the configuration file
 #bindsym $mod+Shift+c reload
@@ -243,7 +244,7 @@ set $Locker i3lock-fancy && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3lock-fancy && sleep 1, mode "default"
+    bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
     bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
