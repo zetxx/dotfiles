@@ -47,6 +47,10 @@ chsh -s /bin/zsh
 ```bash
 genfstab -Up /mnt >> /mnt/etc/fstab && arch-chroot /mnt
 ```
+## Change root
+```bash
+arch-chroot /mnt
+```
 ## Enable services
 ```bash
 systemctl enable lightdm.service && systemctl enable sshd.service
