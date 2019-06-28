@@ -150,5 +150,6 @@
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
   "workbench.startupEditor": "none",
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "native",
+  "search.location": "sidebar"
 }
