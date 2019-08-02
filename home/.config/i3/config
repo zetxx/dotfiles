@@ -201,8 +201,8 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title github amixer brightness battery date time layout dunst -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 github.token=$GIT_TOKEN_STATUS github.interval=30 -t iceberg-powerline
-    font pango:xos4 Terminus 12
+    status_command bumblebee-status -m title github amixer brightness battery date time layout dunst -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 github.token=$GIT_TOKEN_STATUS github.interval=30 -t onedark-powerline
+    font pango:Ubuntu Mono 12
     position          top
     tray_output       primary
     tray_padding 0
@@ -242,7 +242,7 @@ mode "$mode_system" {
     bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
     bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
