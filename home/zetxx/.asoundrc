@@ -1,25 +1,32 @@
 defaults.pcm.rate_converter "speexrate_medium"
 
-pcm.card2 {
-     type hw
-     card 2
-     device 0
+pcm.creativesbp3 {
+    type hw
+    card 2
+    device 0
 }
 
-pcm.card51 {
-     type hw
-     card 0
-     device 0
+pcm.onboard {
+    type hw
+    card 0
+    device 0
 }
 
-# 6 channel dmix:
+ctl.onboard {
+    type hw
+    card 0
+    device 0
+
+}
+
+## 6 channel dmix:
 pcm.dmix6 {
      type dmix
         ipc_key 1024
         ipc_key_add_uid false # let multiple users share
         ipc_perm 0660 # IPC permissions (octal, default 0600)
         slave {
-                pcm card51 # see below
+                pcm onboard # see below
                 rate 48000
                 channels 6
                 period_time 0
@@ -48,7 +55,7 @@ pcm.ch51dup {
 pcm.duplex {
      type asym
      playback.pcm "ch51dup" # upmix first
-     capture.pcm "card51"
+     capture.pcm "onboard"
 }
 
 # change default device:
@@ -56,8 +63,3 @@ pcm.!default {
      type plug
      slave.pcm "duplex"
 }
-
-# for aoss
-pcm.dsp "duplex"
-
-pcm.dsp1 "duplex"
