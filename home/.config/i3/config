@@ -37,9 +37,9 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/flat-orange.rasi"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/flat-orange.rasi"
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/flat-orange.rasi"
+bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/oxide.rasi"
+bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/oxide.rasi"
+bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/oxide.rasi"
 
 
 # change focus
@@ -261,7 +261,7 @@ bindsym $mod+Shift+e mode "$mode_system"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    status_command bumblebee-status -m title spacer kernel load cpu memory date time pacman docker_ps layout amixer -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us -t iceberg-powerline
+    status_command bumblebee-status -m title spacer kernel load cpu memory date time pacman layout amixer -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us -t iceberg-powerline
     font pango:Inconsolata 10
     position          top
     tray_output       primary

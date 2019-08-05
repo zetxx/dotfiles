@@ -2,6 +2,7 @@
 {
   "editor.fontFamily": "Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace",
   "editor.fontSize": 13,
+  "editor.wordWrap": "off",
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
@@ -150,5 +151,29 @@
   "gitlens.views.search.location": "scm",
   "telemetry.enableTelemetry": false,
   "window.titleBarStyle": "native",
-  "git.autofetch": true
+  "git.autofetch": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "ibm-blockchain-platform.fabric.runtime": {
+    "ports": {
+      "orderer": 17050,
+      "peerRequest": 17051,
+      "peerChaincode": 17052,
+      "peerEventHub": 17053,
+      "certificateAuthority": 17054,
+      "couchDB": 17055,
+      "logs": 17056
+    },
+    "developmentMode": false
+  },
+  "ibm-blockchain-platform.fabric.wallets": [],
+  "ibm-blockchain-platform.fabric.gateways": [],
+  "debug.console.wordWrap": false,
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  }
 }
