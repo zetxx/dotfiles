@@ -209,6 +209,12 @@ assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 assign [class="Viber"] $workspace_chat
 
+# Workspace MEDIA
+set $workspace_media " :m"
+bindsym $mod+m workspace $workspace_media
+bindsym $mod+Shift+m move container to workspace $workspace_media
+assign [class=".*Music.*"] $workspace_media
+
 # reload the configuration file
 #bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
