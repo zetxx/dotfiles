@@ -212,8 +212,10 @@ bar {
     tray_output       primary
     tray_padding 0
     colors {
-        focused_workspace  #454545 #98c379 #282c34
-        inactive_workspace #454545 #282c34 #98c379
+        focused_workspace  #2f343a #98c379 #282c34
+        active_workspace  #2f343a #3c5927 #98c379
+        inactive_workspace #2f343a #282c34 #98c379
+        urgent_workspace   #2f343a #c37979 #ff0000
     }
 }
 
