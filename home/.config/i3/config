@@ -210,9 +210,9 @@ assign [class=".*Skype.*"] $workspace_chat
 assign [class="Viber"] $workspace_chat
 
 # Workspace MEDIA
-set $workspace_media " :m"
-bindsym $mod+m workspace $workspace_media
-bindsym $mod+Shift+m move container to workspace $workspace_media
+set $workspace_media " :u"
+bindsym $mod+u workspace $workspace_media
+bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
 # reload the configuration file
