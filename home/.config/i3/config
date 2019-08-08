@@ -112,6 +112,10 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# move workspace
+bindsym $mod+m move workspace to output left
+bindsym $mod+n move workspace to output right
+
 #Workspace definition
 ##       
 # Workspace IDE
@@ -155,9 +159,9 @@ assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 
 # Workspace MEDIA
-set $workspace_media " :m"
-bindsym $mod+m workspace $workspace_media
-bindsym $mod+Shift+m move container to workspace $workspace_media
+set $workspace_media " :u"
+bindsym $mod+u workspace $workspace_media
+bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
 # move workspace
