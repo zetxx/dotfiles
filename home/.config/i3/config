@@ -275,6 +275,7 @@ bar {
     tray_output       primary
     colors {
             focused_workspace  #454545 #98c379 #282c34
+            focused_workspace  #454545 #d6e7ca #282c34
             inactive_workspace #454545 #282c34 #98c379
     }
 }
