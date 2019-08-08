@@ -14,7 +14,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu Mono 8
+font pango:Roboto Mono for Powerline 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -160,9 +160,11 @@ set $monitor_two HDMI-2
 bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
+
 #Workspace definition
+##       
 # Workspace IDE
-set $workspace_ide IDE
+set $workspace_ide " :i"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 assign [class="^Subl3$"] $workspace_ide
@@ -170,7 +172,7 @@ assign [class="^Code$"] $workspace_ide
 workspace $workspace_ide output $monitor_one
 
 # Workspace WWW
-set $workspace_www WWW
+set $workspace_www " :w"
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
@@ -179,28 +181,28 @@ assign [class="^Opera$"] $workspace_www
 workspace $workspace_www output $monitor_two
 
 # Workspace Terminal
-set $workspace_term TERM
+set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
 workspace $workspace_term output $monitor_two
 
 # Workspace SQL
-set $workspace_sql SQL
+set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 assign [class="^Valentina Studio$"] $workspace_sql
 workspace $workspace_sql output $monitor_two
 
 # Workspace RDP
-set $workspace_rdp RDP
+set $workspace_rdp " :p"
 bindsym $mod+p workspace $workspace_rdp
 bindsym $mod+Shift+p move container to workspace $workspace_rdp
 assign [class="^Remmina$"] $workspace_rdp
 workspace $workspace_rdp output $monitor_two
 
 # Workspace CHAT
-set $workspace_chat CHAT
+set $workspace_chat " :c"
 bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
@@ -249,7 +251,7 @@ mode "$mode_system" {
     bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
     bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -261,10 +263,14 @@ bindsym $mod+Shift+e mode "$mode_system"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    status_command bumblebee-status -m title spacer kernel load cpu memory date time pacman layout amixer -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us -t iceberg-powerline
-    font pango:Inconsolata 10
+    status_command bumblebee-status -m title spacer kernel load cpu memory date time pacman layout amixer -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us -t onedark-powerline
+    font pango: Roboto Mono for Powerline 8
     position          top
     tray_output       primary
+    colors {
+            focused_workspace  #454545 #98c379 #282c34
+            inactive_workspace #454545 #282c34 #98c379
+    }
 }
 
 # Media player controls
