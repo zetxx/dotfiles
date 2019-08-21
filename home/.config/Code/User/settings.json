@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace",
-  "editor.fontSize": 13,
+  "editor.fontFamily": "Roboto Mono for Powerline",
+  "editor.fontSize": 12,
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
