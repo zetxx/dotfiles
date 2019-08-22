@@ -216,7 +216,7 @@ bar {
         focused_workspace  #2f343a #98c379 #282c34
         active_workspace  #2f343a #3c5927 #98c379
         inactive_workspace #2f343a #282c34 #98c379
-        urgent_workspace   #2f343a #c37979 #ffffff
+        urgent_workspace   #2f343a #c37979 #000000
     }
 }
 
@@ -262,8 +262,3 @@ exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id calib /home/zetxx/dotfiles/screen/color-profile/profile.icm
 exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
-
-client.focused #526532 #526532 #ffffff #a4cb64
-client.focused_inactive #aea79f #aea79f #3c3b37 #aea79f
-client.unfocused #3c3b37 #3c3b37 #aea79f #3c3b37
-client.urgent #FF0000 #FF0000 #ffffff #FF0000
