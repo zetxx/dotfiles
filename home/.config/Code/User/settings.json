@@ -174,5 +174,7 @@
   "debug.console.wordWrap": false,
   "[markdown]": {
     "editor.wordWrap": "off"
-  }
+  },
+  "sonarlint.ls.javaHome": "/usr/lib/jvm/java-8-openjdk",
+  "sonarlint.ls.vmargs": "-Xmx512m"
 }
