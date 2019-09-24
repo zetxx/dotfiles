@@ -1,0 +1,8 @@
+UUID=b56268b3-a9e9-4a52-b188-9c7ef28c5691    /                    ext4       rw,relatime,data=ordered    0 1
+UUID=858759a7-1c3d-4d68-a741-3d769f8d553d    /boot                ext4       rw,relatime,data=ordered    0 2
+UUID=17c6e0e9-d73e-4aed-a673-192de678a763    /home                ext4       rw,relatime,data=ordered    0 2
+UUID=f32d1667-1f2b-486a-842c-640e9a9a0599    /home/zetxx/store    ext4       rw,relatime,data=ordered    0 2
+#UUID=/dev/sdb2                              /Storage/win         ntfs-3g    defaults                    0 2
+#UUID=/dev/sdc1                              /Storage/sdc         ntfs-3g    defaults                    0 2
+UUID=b3832ae9-1f68-4015-a288-a56fa67eacbe    /Storage/sdd         ext4       rw,relatime,data=ordered    0 2
+#UUID=/dev/sde1                              /Storage/sde         ext4       rw,relatime,data=ordered    0 2
