@@ -21,7 +21,6 @@
   "eslint.options": {
     "configFile": "/home/zetxx/npm/lib/node_modules/ut-tools/eslint/.eslintrc"
   },
-  "editor.scrollBeyondLastLine": false,
   "php.validate.enable": false,
   "editor.tabSize": 4,
   "workbench.editor.tabCloseButton": "left",

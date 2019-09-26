@@ -194,5 +194,19 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "hyperledger-test1",
+		"rootPath": "/store/Projects/hyperledger/test1",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "4g-esp32-micropython",
+		"rootPath": "/store/Projects-sep/router-rpi-4G/esp32/Adafruit-Feather-HUZZAH32/micropython",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
