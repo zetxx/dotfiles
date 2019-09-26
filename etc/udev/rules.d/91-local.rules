@@ -1,0 +1,2 @@
+#switch off usb power saving
+ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
