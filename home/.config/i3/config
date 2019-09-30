@@ -164,7 +164,7 @@ bindsym $mod+n move workspace to output right
 #Workspace definition
 ##       
 # Workspace IDE
-set $workspace_ide " :i"
+set $workspace_ide " :e"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 assign [class="^Subl3$"] $workspace_ide

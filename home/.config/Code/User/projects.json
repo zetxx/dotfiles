@@ -208,5 +208,12 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "codec-iso8583",
+		"rootPath": "/store/Projects/dev/ut-codec-iso8583",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
