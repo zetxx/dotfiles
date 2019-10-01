@@ -138,5 +138,19 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "4g-esp32-micropython",
+		"rootPath": "/store/Projects/nodejs/router-rpi-4G/esp32/Adafruit-Feather-HUZZAH32/micropython",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Hyperledger",
+		"rootPath": "/store/Projects/Hyperledger",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
