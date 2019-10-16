@@ -291,8 +291,7 @@ exec --no-startup-id xautolock -time 40 -locker "i3lock-fancy" &
 #exec --no-startup-id compton --config ~/.config/compton.conf -b &
 exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" &
 exec --no-startup-id nm-applet &
-exec --no-startup-id lxsession &
-exec --no-startup-id xfce4-clipman &
+exec --no-startup-id lxsession --de=i3 &
 exec --no-startup-id solaar &
 exec --no-startup-id slack &
 exec --no-startup-id remmina -i &

@@ -215,5 +215,26 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-ctp",
+		"rootPath": "/store/Projects/dev/ut-ctp",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-transfer",
+		"rootPath": "/store/Projects/dev/ut-transfer",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-function",
+		"rootPath": "/store/Projects/dev/ut-function",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
