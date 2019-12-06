@@ -1,0 +1,2 @@
+# disable rpi3 power save on wifi
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan0", RUN+="/usr/bin/iw dev $name set power_save off"
