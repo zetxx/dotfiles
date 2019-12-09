@@ -189,6 +189,7 @@ set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
+assign [class="*.term.*"] $workspace_term
 workspace $workspace_term output $monitor_two
 
 # Workspace SQL
