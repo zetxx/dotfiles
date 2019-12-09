@@ -30,6 +30,10 @@ font pango:Roboto Mono for Powerline 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Screen Shots
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+bindsym Control+Print exec gnome-screenshot -i
+
 # start a terminal
 bindsym $mod+Return exec terminator
 
@@ -37,9 +41,9 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/oxide.rasi"
+bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/flat-orange"
+bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/flat-orange"
+bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/flat-orange"
 
 
 # change focus

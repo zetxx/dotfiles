@@ -236,5 +236,26 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-iso",
+		"rootPath": "/store/Projects/dev/ut-iso",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "cfc-eft",
+		"rootPath": "/store/Projects/impl-cfc-eft",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "eft",
+		"rootPath": "/store/Projects/impl-eft",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
