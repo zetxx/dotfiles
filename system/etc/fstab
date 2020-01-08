@@ -1,0 +1,5 @@
+# <file system>	                             <dir>           <type>	<options>	          <dump>    <pass>
+UUID=5E2D-EA50                               /boot           vfat       defaults                  0         0
+UUID=634e2ca5-ad48-4c06-9787-c1659d9025c6    /home           ext4       defaults,noatime,discard  0         1
+UUID=8173c282-7ee2-408b-8456-bf70ea2bc0b6    /store/31.1GB   ext4       defaults,noatime,discard  0         0
+UUID=4152956f-c7a5-477d-b672-9cd92bb5a95d    /store/31.0GB   ext2       defaults,noatime,discard  0         0
