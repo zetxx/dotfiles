@@ -1,19 +1,5 @@
 [
 	{
-		"name": "impl-accu-atm",
-		"rootPath": "/store/Projects/SG/impl-accu-atm/impl-accu-atm",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
-		"name": "impl-accu-card",
-		"rootPath": "/store/Projects/SG/impl-accu-card/impl-accu-card",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
 		"name": "ctp-pan",
 		"rootPath": "/store/Projects/SG/dev/ut-ctp-pan",
 		"paths": [],
@@ -112,13 +98,6 @@
 		"enabled": true
 	},
 	{
-		"name": "kicb-mwallet",
-		"rootPath": "/store/Projects/SG/impl-kicb-mwallet",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
 		"name": "base-oracle",
 		"rootPath": "/store/Projects/SG/impl-base-oracle",
 		"paths": [],
@@ -149,6 +128,20 @@
 	{
 		"name": "Hyperledger",
 		"rootPath": "/store/Projects/Hyperledger",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "cfc-eft",
+		"rootPath": "/store/Projects/SG/impl-cfc-eft",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "home-assistant.io.conf",
+		"rootPath": "/store/Projects/home-assistant.io.conf",
 		"paths": [],
 		"group": "",
 		"enabled": true

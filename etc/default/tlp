@@ -7,7 +7,7 @@
 
 # Set to 0 to disable, 1 to enable TLP.
 TLP_ENABLE=1
-TLP_DEBUG="bat disk lock nm path pm rf run sysfs udev usb"
+#TLP_DEBUG="bat disk lock nm path pm rf run sysfs udev usb"
 
 # Operation mode when no power supply can be detected: AC, BAT
 # Concerns some desktop and embedded hardware only.
@@ -15,8 +15,8 @@ TLP_DEFAULT_MODE=BAT
 
 # Seconds laptop mode has to wait after the disk goes idle before doing a sync.
 # Non-zero value enables, zero disables laptop mode.
-DISK_IDLE_SECS_ON_AC=0
-DISK_IDLE_SECS_ON_BAT=2
+#DISK_IDLE_SECS_ON_AC=0
+#DISK_IDLE_SECS_ON_BAT=2
 
 # Dirty page values (timeouts in secs).
 MAX_LOST_WORK_SECS_ON_AC=15
@@ -34,7 +34,7 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 #   occur. ondemand is sufficient for *almost all* workloads, you should know
 #   what you're doing!
 CPU_SCALING_GOVERNOR_ON_AC=operformance
-CPU_SCALING_GOVERNOR_ON_BAT=powersave
+CPU_SCALING_GOVERNOR_ON_BAT=operformance
 
 # Set the min/max frequency available for the scaling governor.
 # Possible values strongly depend on your CPU. For available frequencies see
@@ -79,11 +79,11 @@ NMI_WATCHDOG=0
 #   performance, normal, powersave
 # Requires kernel module msr and x86_energy_perf_policy from linux-tools
 ENERGY_PERF_POLICY_ON_AC=performance
-ENERGY_PERF_POLICY_ON_BAT=powersave
+ENERGY_PERF_POLICY_ON_BAT=normal
 
 # Hard disk devices; separate multiple devices with spaces (default: sda).
 # Devices can be specified by disk ID also (lookup with: tlp diskid).
-DISK_DEVICES="sda sdb"
+#DISK_DEVICES="nvme0n1"
 
 # Hard disk advanced power management level: 1..254, 255 (max saving, min, off)
 # Levels 1..127 may spin down the disk; 255 allowable on most drives.
