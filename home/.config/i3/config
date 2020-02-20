@@ -9,7 +9,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Roboto Mono for Powerline 10
+font pango:Roboto Mono for Powerline 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -257,7 +257,6 @@ exec --no-startup-id /usr/bin/lxpolkit &
 exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" &
 exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
-exec --no-startup-id udiskie -t &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id calib /home/zetxx/dotfiles/screen/color-profile/profile.icm

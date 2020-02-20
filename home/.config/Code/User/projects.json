@@ -145,5 +145,12 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "bluecode-africa",
+		"rootPath": "/store/Projects/SG/impl-bluecode-africa",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
