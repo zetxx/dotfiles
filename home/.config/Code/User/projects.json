@@ -91,20 +91,6 @@
 		"enabled": true
 	},
 	{
-		"name": "atm-simulator-test",
-		"rootPath": "/store/Projects/SG/atm-simulator-test",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
-		"name": "base-oracle",
-		"rootPath": "/store/Projects/SG/impl-base-oracle",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
 		"name": "port-cross-sql",
 		"rootPath": "/store/Projects/SG/dev/ut-port-cross-sql",
 		"paths": [],
@@ -126,20 +112,6 @@
 		"enabled": true
 	},
 	{
-		"name": "Hyperledger",
-		"rootPath": "/store/Projects/Hyperledger",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
-		"name": "cfc-eft",
-		"rootPath": "/store/Projects/SG/impl-cfc-eft",
-		"paths": [],
-		"group": "",
-		"enabled": true
-	},
-	{
 		"name": "home-assistant.io.conf",
 		"rootPath": "/store/Projects/home-assistant.io.conf",
 		"paths": [],
@@ -149,6 +121,34 @@
 	{
 		"name": "bluecode-africa",
 		"rootPath": "/store/Projects/SG/impl-bluecode-africa",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-port-swagger",
+		"rootPath": "/store/Projects/SG/dev/ut-port-swagger",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-swagger2-validator",
+		"rootPath": "/store/Projects/SG/dev/ut-swagger2-validator",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "covid-server",
+		"rootPath": "/store/Projects/SG/virubor/impl-covid-server",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "covid-ui",
+		"rootPath": "/store/Projects/SG/virubor/impl-covid-ui",
 		"paths": [],
 		"group": "",
 		"enabled": true

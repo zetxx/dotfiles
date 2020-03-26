@@ -88,7 +88,7 @@
   ],
   "workbench.sideBar.location": "right",
   "git.confirmSync": false,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "mssql.connections": [{
     "server": "devdb08",
     "database": "impl-accu-atmcard-elin.angelov",
@@ -149,5 +149,6 @@
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
   "workbench.startupEditor": "none",
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "native",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

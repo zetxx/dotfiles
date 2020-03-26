@@ -119,7 +119,7 @@ bindsym $mod+n move workspace to output right
 #Workspace definition
 ##       
 # Workspace IDE
-set $workspace_ide " :i"
+set $workspace_ide "⌨ :e"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 assign [class="^Subl3$"] $workspace_ide
@@ -134,7 +134,7 @@ assign [class="^Chromium$"] $workspace_www
 assign [class="^Opera$"] $workspace_www
 
 # Workspace RDP
-set $workspace_rdp " :p"
+set $workspace_rdp " :p"
 bindsym $mod+p workspace $workspace_rdp
 bindsym $mod+Shift+p move container to workspace $workspace_rdp
 assign [class="^Remmina$"] $workspace_rdp
