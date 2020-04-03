@@ -152,5 +152,12 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "impl-covid",
+		"rootPath": "/store/Projects/SG/impl-covid",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]

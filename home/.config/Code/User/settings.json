@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "editor.quickSuggestions": false,
   "editor.fontFamily": "Roboto Mono for Powerline",
   "editor.fontSize": 12,
   "files.exclude": {
