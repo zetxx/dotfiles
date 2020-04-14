@@ -95,7 +95,6 @@ export NODE_ENV=development
 
 #export LIBVA_DRIVER_NAME=i965 #Intel GMA 4500 series and newer GPUs are supported by libva-intel-driver with mesa. // https://wiki.archlinux.org/index.php/Hardware_video_acceleration
 
-source $HOME/.cargo/env
 archey3 --config=~/dotfiles/home/.config/archey3.config -c magenta
 export LIBVA_DRIVER_NAME='i965'
 export VDPAU_DRIVER='va_gl'
