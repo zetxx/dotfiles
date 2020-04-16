@@ -54,7 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/npm/bin:$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -83,6 +82,9 @@ export PATH=$HOME/npm/bin:$HOME/bin:/usr/local/bin:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #source /etc/makepkg.conf
 
+# mkdir "${HOME}/.npm-packages"
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$NPM_PACKAGES/bin"
 export EDITOR="subl3"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS

@@ -19,7 +19,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "javascript.validate.enable": false,
   "eslint.options": {
-    "configFile": "/home/zetxx/npm/lib/node_modules/ut-tools/eslint/.eslintrc"
+    "configFile": "/home/zetxx/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc"
   },
   "php.validate.enable": false,
   "editor.tabSize": 4,
@@ -151,5 +151,9 @@
   "gitlens.views.search.location": "scm",
   "workbench.startupEditor": "none",
   "window.titleBarStyle": "native",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "launch": {
+  
+  }
 }
