@@ -34,10 +34,10 @@ mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p3 /mnt/home/
 
 ## Install base, change shell
 ```bash
-pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog dhcpd i3 clipmenu rofi curl udiskie \
+pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
 lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings \
-lxappearance ncdu arandr xrandr dunst \
+lxappearance ncdu arandr xorg-xrandr dunst \
 chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet && \
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
