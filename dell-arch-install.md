@@ -23,7 +23,7 @@ parted -a optimal /dev/nvme0n1 mkpart primary 513MiB 41GiB && \
 parted -a optimal /dev/nvme0n1 name 2 root && \
 parted -a optimal /dev/nvme0n1 mkpart primary 41GiB 60GiB && \
 parted -a optimal /dev/nvme0n1 name 3 home && \
-parted -a optimal /dev/nvme0n1 mkpart primary 60GiB -1 && \
+parted -a optimal /dev/nvme0n1 mkpart primary 60GiB 100% && \
 parted -a optimal /dev/nvme0n1 name 4 store && \
 mkfs.fat -F32 /dev/nvme0n1p1 && \
 mkfs.ext4 /dev/nvme0n1p2 && mkfs.ext4 /dev/nvme0n1p3 && mkfs.ext4 /dev/nvme0n1p4 && \
