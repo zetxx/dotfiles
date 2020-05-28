@@ -36,16 +36,13 @@ mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p3 /mnt/home/
 ```bash
 pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
-lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings \
+lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings linux linux-firmware \
 lxappearance ncdu arandr xorg-xrandr dunst \
-chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet && \
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
-chsh -s /bin/zsh
+chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet
 ```
 ## generate fstab and change root
 ```bash
-genfstab -Up /mnt >> /mnt/etc/fstab && arch-chroot /mnt
+genfstab -t UUID -Up /mnt >> /mnt/etc/fstab
 ```
 ## Change root
 ```bash
@@ -60,9 +57,16 @@ systemctl enable lightdm.service && systemctl enable sshd.service
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 ```
 
+## Support tools
+```bash
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
+chsh -s /bin/zsh
+```
+
 ## Hostname and time
 ```bash
-echo base-arch > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
+echo xps13 > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
 ```
 
 ## Locales:
