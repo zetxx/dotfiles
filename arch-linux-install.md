@@ -1,76 +1,96 @@
 # Arch linux install
+
 ## set root password
 ```bash
 passwd
 ```
+
+## enable wireless
+```bash
+iw dev
+wifi-menu -o <device>
+```
+
 ## start sshd
 ```bash
 systemctl start sshd.service
 ```
+
 ## partitioning and format
 ```bash
 parted -a optimal /dev/sda mktable gpt && \
-parted -a optimal /dev/sda mkpart primary 1 3 && \
-parted -a optimal /dev/sda name 1 grub && \
+parted -a optimal /dev/sda mkpart primary 1MiB 3MiB && \
 parted -a optimal /dev/sda set 1 bios_grub on && \
-parted -a optimal /dev/sda mkpart primary 3 2051 && \
+parted -a optimal /dev/sda name 1 bios_grub && \
+parted -a optimal /dev/sda mkpart primary 3MiB 600MiB && \
 parted -a optimal /dev/sda name 2 boot && \
-parted -a optimal /dev/sda mkpart primary 2051 11000 && \
+parted -a optimal /dev/sda mkpart primary 600Mib 65GiB && \
 parted -a optimal /dev/sda name 3 root && \
-parted -a optimal /dev/sda mkpart primary 11000 21000 && \
+parted -a optimal /dev/sda mkpart primary 65GiB 75GiB && \
 parted -a optimal /dev/sda name 4 home && \
-mkfs.ext4 /dev/sda2 && mkfs.ext4 /dev/sda3 && mkfs.ext4 /dev/sda4
+parted -a optimal /dev/sda mkpart primary 75GiB 100% && \
+parted -a optimal /dev/sda name 5 store && \
+mkfs.ext4 /dev/sda2 && mkfs.ext4 /dev/sda3 && mkfs.ext4 /dev/sda4 && mkfs.ext4 /dev/sda5 && \
+mount /dev/sda3 /mnt && \
+mkdir /mnt/boot && mkdir /mnt/home && mkdir /mnt/Store && \
+mount /dev/sda2 /mnt/boot/ && mount /dev/sda4 /mnt/home/ && mount /dev/sda5 /mnt/Store/
 ```
 
-## mount partitions
-```bash
-mount /dev/sda3 /mnt && mkdir /mnt/boot && mkdir /mnt/home && mount /dev/sda2 /mnt/boot/ && mount /dev/sda4 /mnt/home/
-```
 ## install base
 ```bash
-pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim curl && git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && chsh -s /bin/zsh
+pacstrap /mnt base linux linux-firmware openssh zsh dhcp grub sudo vim iw wpa_supplicant dialog curl libinput networkmanager lightdm lightdm-gtk-greeter acpi alsa-tools arandr xorg-xrandr xorg-server alsa-utils network-manager-applet intel-ucode
 ```
 
 ## generate fstab and change root
 ```bash
-genfstab -Up /mnt >> /mnt/etc/fstab && arch-chroot /mnt
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
+## Change root
+```bash
+arch-chroot /mnt
+```
+## Enable services
+```bash
+systemctl enable sshd.service
+```
+## Enable wheel group
+```bash
+echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
+```
+
 ## Hostname and time
 ```bash
-echo base-arch > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
+echo asq-s0ny > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
 ```
-## install Desktop env
-```bash
-pacman -S dialog xfce4 xfce4-goodies chromium xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 alsa-utils xorg-xinit networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc wget vi vim emacs mc lightdm lightdm-gtk-greeter network-manager-applet
-```
+
 ## Locales:
 ```bash
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && echo "LANG=en_US.UTF-8" >> /etc/locale.conf && echo "LC_COLLATE=C" >> /etc/locale.conf && echo "LC_TIME=en_US.UTF-8" >> /etc/locale.conf && echo "LC_MESSAGES=C" >> /etc/locale.conf && locale-gen
 ```
 
-## set root password
-
-## enable services
+## Boot
 ```bash
-systemctl enable lightdm.service && systemctl enable sshd.service
+mkinitcpio -P && grub-install --target=i386-pc /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## generate boot
+## set root passwd
+- `passwd`
+
+## Clean
 ```bash
-mkinitcpio -p linux && grub-install --target=i386-pc --recheck --debug /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
+umount /mnt/Store && umount /mnt/home && umount /mnt/boot && umount /mnt
 ```
 
-## after restart
+## Reboot
 
-### add some user
+## add some user
 ```bash
 useradd -m -d /home/usr -G wheel -s /bin/zsh usr
 ```
 
-## AUR install trizen from normal user
-
+## Support tools
 ```bash
-curl https://aur.archlinux.org/cgit/aur.git/snapshot/trizen.tar.gz --output trizen.tar.gz && tar -xvf trizen.tar.gz && cd trizen/ && makepkg -s
-
-sudo pacman -U ./<package name>
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
+chsh -s /bin/zsh
 ```
