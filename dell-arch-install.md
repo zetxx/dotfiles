@@ -98,3 +98,8 @@ useradd -m -d /home/usr -G wheel -s /bin/zsh usr
 ```bash
 sudo pacman -Suy --noconfirm ttf-ubuntu-font-family ttf-font-awesome adobe-source-code-pro-fonts adobe-source-code-pro-fonts ttf-roboto-mono ttf-roboto otf-font-awesome && trizen -Su --noedit --noconfirm ttf-google-fonts-git ttf-font-awesome-4 ttf-iosevka-term ttf-iosevka powerline-fonts-git
 ```
+
+## Usefull packages
+
+- rshell
+
