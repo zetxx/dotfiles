@@ -83,8 +83,10 @@ source $ZSH/oh-my-zsh.sh
 #source /etc/makepkg.conf
 
 # mkdir "${HOME}/.npm-packages"
+export DOTNET_PATH="${HOME}/.dotnet"
+export DOTNET_TOOLS_PATH="${DOTNET_PATH}/tools"
 export NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$NPM_PACKAGES/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$DOTNET_PATH:$DOTNET_TOOLS_PATH:$NPM_PACKAGES/bin"
 export EDITOR="subl3"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS

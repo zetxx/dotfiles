@@ -166,5 +166,33 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-port-sql-knexjs",
+		"rootPath": "/store/Projects/SG/ut-port-sql-knexjs",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "sql-knexjs-test",
+		"rootPath": "/store/Projects/SG/sql-knexjs-test",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "bank-statement-tear",
+		"rootPath": "/store/Projects/nodejs/bank-statement-tear",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "test-migration-separation",
+		"rootPath": "/store/Projects/SG/test-migration-separation",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]

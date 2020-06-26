@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.quickSuggestions": false,
-  "editor.fontFamily": "Roboto Mono for Powerline",
+  "editor.fontFamily": "'DejaVu Sans Mono'",
   "editor.fontSize": 12,
   "files.exclude": {
     "**/.git": true,
@@ -49,6 +49,7 @@
     "Xsrf",
     "accum",
     "aptra",
+    "asyncio",
     "cardless",
     "cavv",
     "ccdccv",
@@ -85,6 +86,7 @@
     "selectable",
     "sernum",
     "tmkkvv",
+    "uasyncio",
     "zpkkvv"
   ],
   "workbench.sideBar.location": "right",
@@ -127,7 +129,7 @@
   "gitlens.keymap": "none",
   "explorer.confirmDragAndDrop": false,
   "plantuml.render": "PlantUMLServer",
-  "plantuml.server": "http://elin:33333",
+  "plantuml.server": "http://elin-e-a.Softwaregroup-bg.com:15800",
   "gitlens.historyExplorer.enabled": true,
   "gitlens.gitExplorer.enabled": false,
   "gitlens.resultsExplorer.location": "scm",
@@ -153,7 +155,11 @@
   "window.titleBarStyle": "native",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.autofetch": true,
-  "launch": {
-  
-  }
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "sonarlint.connectedMode.connections.sonarqube": [{
+  }],
+"editor.renderControlCharacters": true,
+"editor.fontLigatures": null
 }
