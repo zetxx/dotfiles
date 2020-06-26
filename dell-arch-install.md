@@ -23,7 +23,7 @@ parted -a optimal /dev/nvme0n1 mkpart primary 513MiB 41GiB && \
 parted -a optimal /dev/nvme0n1 name 2 root && \
 parted -a optimal /dev/nvme0n1 mkpart primary 41GiB 60GiB && \
 parted -a optimal /dev/nvme0n1 name 3 home && \
-parted -a optimal /dev/nvme0n1 mkpart primary 60GiB -1 && \
+parted -a optimal /dev/nvme0n1 mkpart primary 60GiB 100% && \
 parted -a optimal /dev/nvme0n1 name 4 store && \
 mkfs.fat -F32 /dev/nvme0n1p1 && \
 mkfs.ext4 /dev/nvme0n1p2 && mkfs.ext4 /dev/nvme0n1p3 && mkfs.ext4 /dev/nvme0n1p4 && \
@@ -34,18 +34,15 @@ mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p3 /mnt/home/
 
 ## Install base, change shell
 ```bash
-pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog dhcpd i3 clipmenu rofi curl udiskie \
+pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
-lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings \
-lxappearance ncdu arandr xrandr dunst \
-chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet && \
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
-chsh -s /bin/zsh
+lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings linux linux-firmware intel-ucode \
+lxappearance ncdu arandr xorg-xrandr dunst \
+chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet
 ```
 ## generate fstab and change root
 ```bash
-genfstab -Up /mnt >> /mnt/etc/fstab && arch-chroot /mnt
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
 ## Change root
 ```bash
@@ -60,9 +57,16 @@ systemctl enable lightdm.service && systemctl enable sshd.service
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 ```
 
+## Support tools
+```bash
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
+chsh -s /bin/zsh
+```
+
 ## Hostname and time
 ```bash
-echo base-arch > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
+echo xps13 > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
 ```
 
 ## Locales:
@@ -94,3 +98,8 @@ useradd -m -d /home/usr -G wheel -s /bin/zsh usr
 ```bash
 sudo pacman -Suy --noconfirm ttf-ubuntu-font-family ttf-font-awesome adobe-source-code-pro-fonts adobe-source-code-pro-fonts ttf-roboto-mono ttf-roboto otf-font-awesome && trizen -Su --noedit --noconfirm ttf-google-fonts-git ttf-font-awesome-4 ttf-iosevka-term ttf-iosevka powerline-fonts-git
 ```
+
+## Usefull packages
+
+- rshell
+
