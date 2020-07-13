@@ -7,8 +7,7 @@ passwd
 
 ## enable wireless
 ```bash
-iw dev
-wifi-menu -o <device>
+iwctl ....
 ```
 
 ## start sshd
@@ -18,22 +17,23 @@ systemctl start sshd.service
 
 ## partitioning and format
 ```bash
-parted -a optimal /dev/sda mktable gpt && \
-parted -a optimal /dev/sda mkpart primary 1MiB 3MiB && \
-parted -a optimal /dev/sda set 1 bios_grub on && \
-parted -a optimal /dev/sda name 1 bios_grub && \
-parted -a optimal /dev/sda mkpart primary 3MiB 600MiB && \
-parted -a optimal /dev/sda name 2 boot && \
-parted -a optimal /dev/sda mkpart primary 600Mib 65GiB && \
-parted -a optimal /dev/sda name 3 root && \
-parted -a optimal /dev/sda mkpart primary 65GiB 75GiB && \
-parted -a optimal /dev/sda name 4 home && \
-parted -a optimal /dev/sda mkpart primary 75GiB 100% && \
-parted -a optimal /dev/sda name 5 store && \
-mkfs.ext4 /dev/sda2 && mkfs.ext4 /dev/sda3 && mkfs.ext4 /dev/sda4 && mkfs.ext4 /dev/sda5 && \
-mount /dev/sda3 /mnt && \
+parted -a optimal /dev/nvme0n1 mktable gpt && \
+parted -a optimal /dev/nvme0n1 mkpart primary 1MiB 512MiB && \
+parted -a optimal /dev/nvme0n1 name 1 boot && \
+parted -a optimal /dev/nvme0n1 set 1 esp on && \
+parted -a optimal /dev/nvme0n1 mkpart primary 512MiB 50GiB && \
+parted -a optimal /dev/nvme0n1 name 2 root && \
+parted -a optimal /dev/nvme0n1 mkpart primary 50GiB 75GiB && \
+parted -a optimal /dev/nvme0n1 name 3 zetxx && \
+parted -a optimal /dev/nvme0n1 mkpart primary 75GiB 100% && \
+parted -a optimal /dev/nvme0n1 name 4 store && \
+mkfs.fat -F32 /dev/nvme0n1p1 && \
+mkfs.ext4 /dev/nvme0n1p2 && \
+mkfs.ext4 /dev/nvme0n1p3 && \
+mkfs.ext4 /dev/nvme0n1p4 && \
+mount /dev/nvme0n1p2 /mnt && \
 mkdir /mnt/boot && mkdir /mnt/home && mkdir /mnt/Store && \
-mount /dev/sda2 /mnt/boot/ && mount /dev/sda4 /mnt/home/ && mount /dev/sda5 /mnt/Store/
+mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
 ```
 
 ## install base
