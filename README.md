@@ -1,4 +1,4 @@
-# XPS 13 (9350) - 2016 - 16Gb - 512Gb
+# Latitude 7400
 
 ### Keyboard illumination
 
