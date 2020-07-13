@@ -5,8 +5,7 @@ passwd
 ```
 ## enable wireless
 ```bash
-iw dev
-wifi-menu -o <device>
+iwcli ...
 ```
 ## start sshd
 ```bash
@@ -16,20 +15,22 @@ systemctl start sshd.service
 ## partition, format, mount
 ```bash
 parted -a optimal /dev/nvme0n1 mktable gpt && \
-parted -a optimal /dev/nvme0n1 mkpart ESP fat32 1MiB 513MiB && \
-parted -a optimal /dev/nvme0n1 set 1 boot on && \
+parted -a optimal /dev/nvme0n1 mkpart primary 1MiB 512MiB && \
 parted -a optimal /dev/nvme0n1 name 1 boot && \
-parted -a optimal /dev/nvme0n1 mkpart primary 513MiB 41GiB && \
+parted -a optimal /dev/nvme0n1 set 1 esp on && \
+parted -a optimal /dev/nvme0n1 mkpart primary 512MiB 50GiB && \
 parted -a optimal /dev/nvme0n1 name 2 root && \
-parted -a optimal /dev/nvme0n1 mkpart primary 41GiB 60GiB && \
-parted -a optimal /dev/nvme0n1 name 3 home && \
-parted -a optimal /dev/nvme0n1 mkpart primary 60GiB 100% && \
+parted -a optimal /dev/nvme0n1 mkpart primary 50GiB 75GiB && \
+parted -a optimal /dev/nvme0n1 name 3 zetxx && \
+parted -a optimal /dev/nvme0n1 mkpart primary 75GiB 100% && \
 parted -a optimal /dev/nvme0n1 name 4 store && \
 mkfs.fat -F32 /dev/nvme0n1p1 && \
-mkfs.ext4 /dev/nvme0n1p2 && mkfs.ext4 /dev/nvme0n1p3 && mkfs.ext4 /dev/nvme0n1p4 && \
+mkfs.ext4 /dev/nvme0n1p2 && \
+mkfs.ext4 /dev/nvme0n1p3 && \
+mkfs.ext4 /dev/nvme0n1p4 && \
 mount /dev/nvme0n1p2 /mnt && \
-mkdir /mnt/boot && mkdir /mnt/home && \
-mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p3 /mnt/home/
+mkdir /mnt/boot && mkdir /mnt/home && mkdir /mnt/Store && \
+mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
 ```
 
 ## Install base, change shell
