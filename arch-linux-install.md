@@ -38,7 +38,7 @@ mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
 
 ## install base
 ```bash
-pacstrap /mnt base linux linux-firmware openssh zsh dhcp grub sudo vim iw wpa_supplicant dialog curl libinput networkmanager lightdm lightdm-gtk-greeter acpi alsa-tools arandr xorg-xrandr xorg-server alsa-utils network-manager-applet intel-ucode
+pacstrap /mnt base linux linux-firmware openssh zsh dhcp grub sudo vim iw wpa_supplicant dialog curl libinput networkmanager acpi alsa-tools arandr xorg-xrandr xorg-server alsa-utils network-manager-applet intel-ucode
 ```
 
 ## generate fstab and change root
