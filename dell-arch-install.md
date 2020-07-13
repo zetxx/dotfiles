@@ -35,7 +35,7 @@ mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
 
 ## Install base, change shell
 ```bash
-pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
+pacstrap /mnt grub base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
 lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings linux linux-firmware intel-ucode \
 lxappearance ncdu arandr xorg-xrandr dunst \
@@ -76,7 +76,7 @@ echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && echo "LANG=en_US.UTF-8" >> /etc/l
 ```
 ## boot
 ```bash
-mkinitcpio -p linux && bootctl install
+grub-install --target=x86_64-efi --efi-directory=boot --bootloader-id=GRUB && grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## create and edit /boot/loader/entries/arch.conf and add following where sda2 is current root partition
