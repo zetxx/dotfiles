@@ -7,3 +7,6 @@ home/.lein/**/*
 !home/.lein/profiles.clj
 home/.config/ranger/**/*
 !home/.config/ranger/rc.conf
+home/.config/Code
+!home/.config/Code/Dictionaries
+!home/.config/Code/User

@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 
 # mkdir "${HOME}/.npm-packages"
 export NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin"
+export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/"
 export EDITOR="subl3"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS

@@ -1,0 +1,6 @@
+
+[Default Applications]
+x-scheme-handler/viber=viber.desktop
+x-scheme-handler/webcal=chromium.desktop
+x-scheme-handler/postman=Postman.desktop
+inode/directory=pcmanfm.desktop

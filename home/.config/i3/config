@@ -9,7 +9,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Roboto Mono for Powerline 8
+font pango:Inconsolata-g for Powerline 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -35,9 +35,9 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/oxide.rasi"
+bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/flat-orange"
+bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/flat-orange"
+bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/flat-orange"
 
 # change focus
 bindsym $mod+j focus left
@@ -208,10 +208,10 @@ bindsym $mod+r mode "resize"
 #title requires - i3ipc-python-git-latest
 bar {
     status_command bumblebee-status -m title amixer brightness battery date time layout dunst -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
-    font pango:Roboto Mono for Powerline 8
+    font pango:Inconsolata-g for Powerline 9
     position          top
     tray_output       primary
-    tray_padding 0
+    tray_padding 1
     colors {
         focused_workspace  #2f343a #6272a4 #ffffff
         active_workspace  #2f343a #3c5927 #98c379
@@ -259,5 +259,5 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
-exec --no-startup-id calib /home/zetxx/dotfiles/screen/color-profile/profile.icm
-exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
+exec --no-startup-id xcalib /home/zetxx/.dotfiles/screen/color-profile/profile.icm
+#exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
