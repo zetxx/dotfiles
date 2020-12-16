@@ -149,7 +149,8 @@ assign [class="^Terminator$"] $workspace_term
 set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
 bindsym $mod+Shift+s move container to workspace $workspace_sql
-assign [class="^Valentina Studio$"] $workspace_sql
+#assign [class="^Valentina Studio$"] $workspace_sql
+assign [class="^DBeaver$"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat " :c"
@@ -259,5 +260,6 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
+exec --no-startup-id slack &
 exec --no-startup-id xcalib /home/zetxx/.dotfiles/screen/color-profile/profile.icm
 #exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg

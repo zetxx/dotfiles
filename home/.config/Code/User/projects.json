@@ -19,5 +19,110 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-login",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-login",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-notice",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-notice",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-bulk-payment",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bulk-payment",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "standard-service-content",
+		"rootPath": "/Store/zetxx/Projects/dev/standard-service-content",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-bus",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bus",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-port-sql-knexjs",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-port-sql-knexjs",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "impl-evrotrust",
+		"rootPath": "/Store/zetxx/Projects/impl-evrotrust",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "migration-collection",
+		"rootPath": "/Store/zetxx/Projects/other/migration-collection",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "pool-reuse",
+		"rootPath": "/Store/zetxx/Projects/other/pool-reuse",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "impl-ibl",
+		"rootPath": "/Store/zetxx/Projects/impl-ibl",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-port-swagger",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-port-swagger",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "router-rpi-4G",
+		"rootPath": "/Store/zetxx/Projects/other/router-rpi-4G",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "impl-bluecode-africa",
+		"rootPath": "/Store/zetxx/Projects/impl-bluecode-africa",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-ctp-payshield",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-payshield",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-ctp-pos",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-pos",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
