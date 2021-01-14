@@ -5,8 +5,7 @@ passwd
 ```
 ## enable wireless
 ```bash
-iw dev
-wifi-menu -o <device>
+iwcli ...
 ```
 ## start sshd
 ```bash
@@ -16,25 +15,27 @@ systemctl start sshd.service
 ## partition, format, mount
 ```bash
 parted -a optimal /dev/nvme0n1 mktable gpt && \
-parted -a optimal /dev/nvme0n1 mkpart ESP fat32 1MiB 513MiB && \
-parted -a optimal /dev/nvme0n1 set 1 boot on && \
+parted -a optimal /dev/nvme0n1 mkpart primary 1MiB 512MiB && \
 parted -a optimal /dev/nvme0n1 name 1 boot && \
-parted -a optimal /dev/nvme0n1 mkpart primary 513MiB 41GiB && \
+parted -a optimal /dev/nvme0n1 set 1 esp on && \
+parted -a optimal /dev/nvme0n1 mkpart primary 512MiB 50GiB && \
 parted -a optimal /dev/nvme0n1 name 2 root && \
-parted -a optimal /dev/nvme0n1 mkpart primary 41GiB 60GiB && \
-parted -a optimal /dev/nvme0n1 name 3 home && \
-parted -a optimal /dev/nvme0n1 mkpart primary 60GiB 100% && \
+parted -a optimal /dev/nvme0n1 mkpart primary 50GiB 75GiB && \
+parted -a optimal /dev/nvme0n1 name 3 zetxx && \
+parted -a optimal /dev/nvme0n1 mkpart primary 75GiB 100% && \
 parted -a optimal /dev/nvme0n1 name 4 store && \
 mkfs.fat -F32 /dev/nvme0n1p1 && \
-mkfs.ext4 /dev/nvme0n1p2 && mkfs.ext4 /dev/nvme0n1p3 && mkfs.ext4 /dev/nvme0n1p4 && \
+mkfs.ext4 /dev/nvme0n1p2 && \
+mkfs.ext4 /dev/nvme0n1p3 && \
+mkfs.ext4 /dev/nvme0n1p4 && \
 mount /dev/nvme0n1p2 /mnt && \
-mkdir /mnt/boot && mkdir /mnt/home && \
-mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p3 /mnt/home/
+mkdir /mnt/boot && mkdir /mnt/home && mkdir /mnt/Store && \
+mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
 ```
 
 ## Install base, change shell
 ```bash
-pacstrap /mnt base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
+pacstrap /mnt grub base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
 lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings linux linux-firmware intel-ucode \
 lxappearance ncdu arandr xorg-xrandr dunst \
@@ -75,7 +76,7 @@ echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && echo "LANG=en_US.UTF-8" >> /etc/l
 ```
 ## boot
 ```bash
-mkinitcpio -p linux && bootctl install
+grub-install --target=x86_64-efi --efi-directory=boot --bootloader-id=GRUB && grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## create and edit /boot/loader/entries/arch.conf and add following where sda2 is current root partition
