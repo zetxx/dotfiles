@@ -124,5 +124,33 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-port-tcp",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-port-tcp",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-pos",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-pos",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "mwealth",
+		"rootPath": "/Store/zetxx/Projects/impl-mwealth",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-ctp-pan",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-pan",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
