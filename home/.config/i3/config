@@ -132,6 +132,7 @@ bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
 assign [class="^Chromium$"] $workspace_www
 assign [class="^Opera$"] $workspace_www
+assign [class="Google-chrome"] $workspace_www
 
 # Workspace RDP
 set $workspace_rdp " :p"

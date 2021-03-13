@@ -152,5 +152,12 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "bridg-wrong-playground",
+		"rootPath": "/Store/zetxx/Projects/bridg-wrong/bridg-wrong-playground",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]

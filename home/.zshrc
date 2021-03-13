@@ -48,7 +48,7 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm archlinux bower docker web-search battery lein rust fzf)
+plugins=(git npm archlinux bower docker web-search battery lein rust fzf kubectl)
 export TERM="xterm-256color"
 source $ZSH/oh-my-zsh.sh
 
@@ -104,3 +104,4 @@ export VISUAL="subl3"
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 #export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+export KUBE_EDITOR='vim'
