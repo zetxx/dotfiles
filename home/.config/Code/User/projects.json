@@ -159,5 +159,61 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "log2elastic",
+		"rootPath": "/Store/zetxx/Projects/elk-log",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "impl-allianz-paymenthub",
+		"rootPath": "/Store/zetxx/Projects/impl-allianz-paymenthub",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ant-nodejs-electron",
+		"rootPath": "/Store/zetxx/Projects/test/ant-nodejs-electron",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "impl-nmb",
+		"rootPath": "/Store/zetxx/Projects/impl-nmb",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-ussd",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-ussd",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "ut-agent",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-agent",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "bridg-wrong",
+		"rootPath": "/Store/zetxx/Projects/bridg-wrong/bridg-wrong",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "graphql-test",
+		"rootPath": "/Store/zetxx/Projects/other/graphql-test",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]

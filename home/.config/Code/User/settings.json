@@ -221,5 +221,12 @@
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.scrollback": 9999999999,
     "terminal.integrated.automationShell.linux": "",
-    "debug.console.wordWrap": false
+    "debug.console.wordWrap": false,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }

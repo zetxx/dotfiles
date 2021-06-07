@@ -122,7 +122,7 @@ bindsym $mod+n move workspace to output right
 set $workspace_ide "⌨ :e"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
-assign [class="^Subl3$"] $workspace_ide
+#assign [class="^Subl3$"] $workspace_ide
 assign [class="^Code$"] $workspace_ide
 
 # Workspace WWW
@@ -160,6 +160,12 @@ bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 assign [class="Viber"] $workspace_chat
+
+# Workspace VIRT
+set $workspace_virt " :o"
+bindsym $mod+o workspace $workspace_virt
+bindsym $mod+Shift+o move container to workspace $workspace_virt
+assign [class=".*VirtualBox.*"] $workspace_virt
 
 # Workspace MEDIA
 set $workspace_media " :u"
