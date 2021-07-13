@@ -215,5 +215,12 @@
 		"paths": [],
 		"group": "",
 		"enabled": true
+	},
+	{
+		"name": "ut-transfer",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-transfer",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
