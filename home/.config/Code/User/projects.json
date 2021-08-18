@@ -3,224 +3,238 @@
 		"name": "impl: evrotrust-adapter",
 		"rootPath": "/Store/zetxx/Projects/impl-evrotrust-adapter",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-mfactor",
 		"rootPath": "/Store/zetxx/Projects/impl-mfactor",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-user",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-user",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-login",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-login",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-notice",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-notice",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-bulk-payment",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-bulk-payment",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "standard-service-content",
 		"rootPath": "/Store/zetxx/Projects/dev/standard-service-content",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-bus",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-bus",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-port-sql-knexjs",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-port-sql-knexjs",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-evrotrust",
 		"rootPath": "/Store/zetxx/Projects/impl-evrotrust",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "migration-collection",
 		"rootPath": "/Store/zetxx/Projects/other/migration-collection",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "pool-reuse",
 		"rootPath": "/Store/zetxx/Projects/other/pool-reuse",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-ibl",
 		"rootPath": "/Store/zetxx/Projects/impl-ibl",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-port-swagger",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-port-swagger",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "router-rpi-4G",
 		"rootPath": "/Store/zetxx/Projects/other/router-rpi-4G",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-bluecode-africa",
 		"rootPath": "/Store/zetxx/Projects/impl-bluecode-africa",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-ctp-payshield",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-payshield",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-ctp-pos",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-pos",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-port-tcp",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-port-tcp",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-pos",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-pos",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "mwealth",
 		"rootPath": "/Store/zetxx/Projects/impl-mwealth",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-ctp-pan",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-ctp-pan",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "bridg-wrong-playground",
 		"rootPath": "/Store/zetxx/Projects/bridg-wrong/bridg-wrong-playground",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "log2elastic",
 		"rootPath": "/Store/zetxx/Projects/elk-log",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-allianz-paymenthub",
 		"rootPath": "/Store/zetxx/Projects/impl-allianz-paymenthub",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ant-nodejs-electron",
 		"rootPath": "/Store/zetxx/Projects/test/ant-nodejs-electron",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "impl-nmb",
 		"rootPath": "/Store/zetxx/Projects/impl-nmb",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-ussd",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-ussd",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-agent",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-agent",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "bridg-wrong",
 		"rootPath": "/Store/zetxx/Projects/bridg-wrong/bridg-wrong",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "graphql-test",
 		"rootPath": "/Store/zetxx/Projects/other/graphql-test",
 		"paths": [],
-		"group": "",
+		"tags": [],
 		"enabled": true
 	},
 	{
 		"name": "ut-transfer",
 		"rootPath": "/Store/zetxx/Projects/dev/ut-transfer",
 		"paths": [],
-		"group": "",
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "micropython hydro",
+		"rootPath": "/Store/zetxx/Projects/micropython/hydro",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "web-bluetooth",
+		"rootPath": "/Store/zetxx/Projects/electron/web-bluetooth",
+		"paths": [],
+		"tags": [],
 		"enabled": true
 	}
 ]

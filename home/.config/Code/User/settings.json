@@ -27,14 +27,6 @@
     "workbench.editor.tabCloseButton": "left",
     "workbench.editor.tabSizing": "shrink",
     "editor.trimAutoWhitespace": true,
-    "local-history.exclude": [
-        "**/.history/**",
-        "**/.vscode/**",
-        "**/node_modules/**",
-        "**/typings/**",
-        "**/out/**"
-    ],
-    "local-history.enabled": 1,
     "cSpell.userWords": [
         "APIs",
         "Angelov",
@@ -137,7 +129,6 @@
     "window.zoomLevel": 1,
     "mssql.connections": [],
     "workbench.activityBar.visible": true,
-    "window.menuBarVisibility": "toggle",
     "workbench.iconTheme": "vs-seti",
     "editor.codeLens": true,
     "workbench.statusBar.visible": true,
@@ -161,12 +152,7 @@
     "explorer.confirmDragAndDrop": false,
     "plantuml.render": "PlantUMLServer",
     "plantuml.server": "http://elin-e-a.Softwaregroup-bg.com:15800",
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.gitExplorer.enabled": false,
-    "gitlens.resultsExplorer.location": "scm",
-    "gitlens.historyExplorer.location": "scm",
     "gitlens.hovers.enabled": false,
-    "gitlens.settings.mode": "advanced",
     "window.title": "VSCode ${dirty}⋮${rootName} ✎${activeEditorMedium}",
     "editor.links": false,
     "editor.renderLineHighlight": "all",
@@ -175,19 +161,13 @@
     "workbench.view.alwaysShowHeaderActions": true,
     "workbench.editor.openPositioning": "last",
     "gitlens.views.repositories.enabled": false,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.fileHistory.location": "scm",
     "gitlens.views.lineHistory.enabled": true,
-    "gitlens.views.lineHistory.location": "scm",
-    "gitlens.views.compare.location": "scm",
-    "gitlens.views.search.location": "scm",
     "workbench.startupEditor": "none",
     "window.titleBarStyle": "native",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "git.autofetch": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
     "editor.renderControlCharacters": true,
     "python.languageServer": "Microsoft",
     "eslint.format.enable": true,
@@ -224,7 +204,7 @@
     "debug.console.wordWrap": false,
     "explorer.confirmDelete": false,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "editor.renderIndentGuides": false,
     "editor.highlightActiveIndentGuide": false,
@@ -234,8 +214,6 @@
         "editor.wordWrap": "off",
         "editor.quickSuggestions": false
     },
-    "blockman.n03MaxDepth": 2,
-    "blockman.n04ColorComboPreset": "Lobelia (Solid colors)",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.defaultProfile.linux": "/bin/zsh (migrated)",
@@ -250,5 +228,16 @@
             "path": "/bin/zsh",
             "args": []
         }
-    }
+    },
+    "python.showStartPage": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "sonarlint.rules": {
+        "javascript:S4123": {
+            "level": "off"
+        }
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false
 }
