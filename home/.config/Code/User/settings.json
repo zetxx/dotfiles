@@ -68,6 +68,7 @@
         "console",
         "crypted",
         "customisation",
+        "datetimeoffset",
         "decimalisation",
         "description",
         "docx",
@@ -113,6 +114,7 @@
         "recordsets",
         "selectable",
         "sernum",
+        "smalldatetime",
         "sqls",
         "ssid",
         "templates",
@@ -126,7 +128,6 @@
     ],
     "workbench.sideBar.location": "right",
     "git.confirmSync": false,
-    "window.zoomLevel": 1,
     "mssql.connections": [],
     "workbench.activityBar.visible": true,
     "workbench.iconTheme": "vs-seti",
@@ -239,5 +240,6 @@
             "level": "off"
         }
     },
-    "editor.acceptSuggestionOnCommitCharacter": false
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "window.zoomLevel": 1
 }

@@ -236,5 +236,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "expose-sql-methods",
+		"rootPath": "/Store/zetxx/Projects/other/expose-sql-methods",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "electron-ussd-app",
+		"rootPath": "/Store/zetxx/Projects/electron/ussd-app",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]
