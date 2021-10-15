@@ -250,5 +250,26 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-document",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-document",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "impl-vfm-ib",
+		"rootPath": "/Store/zetxx/Projects/impl-vfm-ib",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-card",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-card",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

@@ -269,5 +269,5 @@ exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id slack &
 exec --no-startup-id xcalib /home/zetxx/.dotfiles/screen/color-profile/profile.icm &
-exec --no-startup-id /home/zetxx/.dotfiles/home/arandr-profiles/home.sh
+exec --no-startup-id /home/zetxx/.dotfiles/home/arandr-profiles/desk.sh
 #exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
