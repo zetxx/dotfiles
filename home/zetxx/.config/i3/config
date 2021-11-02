@@ -7,9 +7,9 @@ set_from_resource $GIT_TOKEN_STATUS echo "$GIT_TOKEN_STATUS"
 
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
+# Font for window titles. Will also be used by the bar unless a different ont
 # is used in the bar {} block below.
-font pango:Ubuntu Mono 10
+font pango:Ubuntu Mono 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -35,9 +35,9 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/oxide.rasi"
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/oxide.rasi"
+bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
 
 # change focus
 bindsym $mod+j focus left
@@ -195,8 +195,8 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title github amixer date time layout -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us interval=1 github.token=$GIT_TOKEN_STATUS github.interval=1 -t greyish-powerline
-    font pango:Ubuntu Mono 10
+    status_command bumblebee-status -m title amixer date time layout -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us interval=1 -t greyish-powerline
+    font pango:Ubuntu Mono 12
     position          top
     tray_output       primary
 
@@ -244,9 +244,9 @@ set $volumestep 2
 #set $alsacard 1
 
 # Uncomment to use alsa-utils (append "-c $alsacard" without quotes to override default card)
-bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
-bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
-bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
+#bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
+#bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
+#bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
 
 ######## Volume control
 
@@ -274,8 +274,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id transmission-qt &
 exec --no-startup-id clipmenud &
 exec --no-startup-id radeon-profile &
-exec --no-startup-id steam-runtime -silent &
-#exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
+exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh
 
 client.focused #526532 #526532 #ffffff #a4cb64
 client.focused_inactive #aea79f #aea79f #3c3b37 #aea79f

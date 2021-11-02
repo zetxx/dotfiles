@@ -18,7 +18,6 @@ ctl.onboard {
     device 0
 
 }
-
 ## 6 channel dmix:
 pcm.dmix6 {
      type dmix
