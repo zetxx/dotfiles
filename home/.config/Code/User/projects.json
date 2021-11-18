@@ -271,5 +271,12 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-microservice",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-microservice",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

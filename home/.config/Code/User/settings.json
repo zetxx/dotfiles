@@ -129,7 +129,6 @@
     "workbench.sideBar.location": "right",
     "git.confirmSync": false,
     "mssql.connections": [],
-    "workbench.activityBar.visible": true,
     "workbench.iconTheme": null,
     "editor.codeLens": true,
     "workbench.statusBar.visible": true,
@@ -286,5 +285,6 @@
     "editor.suggest.shareSuggestSelections": true,
     "editor.suggest.showStatusBar": true,
     "javascript.suggest.completeFunctionCalls": true,
-    "typescript.suggest.completeFunctionCalls": true
+    "typescript.suggest.completeFunctionCalls": true,
+    "redhat.telemetry.enabled": false
 }
