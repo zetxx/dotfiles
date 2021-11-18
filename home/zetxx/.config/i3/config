@@ -244,9 +244,9 @@ set $volumestep 2
 #set $alsacard 1
 
 # Uncomment to use alsa-utils (append "-c $alsacard" without quotes to override default card)
-#bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
-#bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
-#bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
+bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
 
 ######## Volume control
 
@@ -274,7 +274,8 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id transmission-qt &
 exec --no-startup-id clipmenud &
 exec --no-startup-id radeon-profile &
-exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh
+#exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh &
+exec --no-startup-id solaar -w=hide
 
 client.focused #526532 #526532 #ffffff #a4cb64
 client.focused_inactive #aea79f #aea79f #3c3b37 #aea79f
