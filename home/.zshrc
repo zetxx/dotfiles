@@ -48,7 +48,7 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm archlinux bower docker web-search battery lein rust fzf kubectl)
+plugins=(git npm archlinux docker web-search battery fzf kubectl docker-compose)
 export TERM="xterm-256color"
 source $ZSH/oh-my-zsh.sh
 
@@ -82,8 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #source /etc/makepkg.conf
 
-# mkdir "${HOME}/.npm-packages"
-export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/"
 export EDITOR="subl"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
@@ -102,6 +100,5 @@ alias gus='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 alias gbd='for dir in ./*; do (echo "$dir"; git -C "$dir" branch; echo "----------------"); done'
 export VISUAL="subl"
 export ANDROID_SDK_ROOT='/opt/android-sdk'
-#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export KUBE_EDITOR='vim'

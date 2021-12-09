@@ -278,5 +278,61 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-client",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-client",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-boarding",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-boarding",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-config",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-config",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-utils",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-utils",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-gateway",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-gateway",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-mocks",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-mocks",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-payment",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-payment",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-vault",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-vault",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

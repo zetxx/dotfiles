@@ -20,7 +20,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "javascript.validate.enable": false,
     "eslint.options": {
-        "configFile": "/home/zetxx/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc"
+        "configFile": "/Store/zetxx/Projects/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc"
     },
     "php.validate.enable": false,
     "editor.tabSize": 4,
@@ -241,7 +241,6 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "window.menuBarVisibility": "toggle",
     "workbench.view.alwaysShowHeaderActions": true,
     "breadcrumbs.icons": false,
     "breadcrumbs.showConstants": false,
@@ -286,5 +285,6 @@
     "editor.suggest.showStatusBar": true,
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.suggest.completeFunctionCalls": true,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "window.menuBarVisibility": "toggle"
 }
