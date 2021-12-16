@@ -119,14 +119,24 @@ bindsym $mod+n move workspace to output right
 #Workspace definition
 ##       
 # Workspace IDE
-set $workspace_ide "⌨ :e"
+set $workspace_ide "⌨ : e"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 #assign [class="^Subl3$"] $workspace_ide
 assign [class="^Code$"] $workspace_ide
 
 # Workspace WWW
-set $workspace_www " :w"
+set $workspace_virt "  :b"
+bindsym $mod+b workspace $workspace_virt
+bindsym $mod+Shift+b move container to workspace $workspace_virt
+assign [class="Lens"] $workspace_virt
+assign [class=".*VirtualBox.*"] $workspace_virt
+#assign [class="^Chromium$"] $workspace_www
+#assign [class="^Opera$"] $workspace_www
+#assign [class="Google-chrome"] $workspace_www
+
+# Workspace WWW
+set $workspace_www "  :w"
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
@@ -135,40 +145,34 @@ assign [class="^Opera$"] $workspace_www
 assign [class="Google-chrome"] $workspace_www
 
 # Workspace RDP
-set $workspace_rdp " :p"
+set $workspace_rdp "  :p"
 bindsym $mod+p workspace $workspace_rdp
 bindsym $mod+Shift+p move container to workspace $workspace_rdp
 assign [class="^Remmina$"] $workspace_rdp
 
 # Workspace Terminal
-set $workspace_term " :t"
+set $workspace_term " : t"
 bindsym $mod+t workspace $workspace_term
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
 
 # Workspace SQL
-set $workspace_sql " :s"
+set $workspace_sql "  :s"
 bindsym $mod+s workspace $workspace_sql
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 #assign [class="^Valentina Studio$"] $workspace_sql
 assign [class="^DBeaver$"] $workspace_sql
 
 # Workspace CHAT
-set $workspace_chat " :c"
+set $workspace_chat "  :c"
 bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 assign [class="Viber"] $workspace_chat
 
-# Workspace VIRT
-set $workspace_virt " :o"
-bindsym $mod+o workspace $workspace_virt
-bindsym $mod+Shift+o move container to workspace $workspace_virt
-assign [class=".*VirtualBox.*"] $workspace_virt
-
 # Workspace MEDIA
-set $workspace_media " :u"
+set $workspace_media "  :u"
 bindsym $mod+u workspace $workspace_media
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
