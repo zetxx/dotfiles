@@ -14,31 +14,31 @@ systemctl start sshd.service
 
 ## partition, format, mount
 ```bash
-parted -a optimal /dev/nvme0n1 mktable gpt && \
-parted -a optimal /dev/nvme0n1 mkpart primary 1MiB 512MiB && \
-parted -a optimal /dev/nvme0n1 name 1 boot && \
-parted -a optimal /dev/nvme0n1 set 1 esp on && \
-parted -a optimal /dev/nvme0n1 mkpart primary 512MiB 50GiB && \
-parted -a optimal /dev/nvme0n1 name 2 root && \
-parted -a optimal /dev/nvme0n1 mkpart primary 50GiB 75GiB && \
-parted -a optimal /dev/nvme0n1 name 3 zetxx && \
-parted -a optimal /dev/nvme0n1 mkpart primary 75GiB 100% && \
-parted -a optimal /dev/nvme0n1 name 4 store && \
-mkfs.fat -F32 /dev/nvme0n1p1 && \
-mkfs.ext4 /dev/nvme0n1p2 && \
-mkfs.ext4 /dev/nvme0n1p3 && \
-mkfs.ext4 /dev/nvme0n1p4 && \
-mount /dev/nvme0n1p2 /mnt && \
+parted -a optimal /dev/sda mktable gpt && \
+parted -a optimal /dev/sda mkpart primary 1MiB 512MiB && \
+parted -a optimal /dev/sda name 1 boot && \
+parted -a optimal /dev/sda set 1 esp on && \
+parted -a optimal /dev/sda mkpart primary 512MiB 50GiB && \
+parted -a optimal /dev/sda name 2 root && \
+parted -a optimal /dev/sda mkpart primary 50GiB 75GiB && \
+parted -a optimal /dev/sda name 3 zetxx && \
+parted -a optimal /dev/sda mkpart primary 75GiB 100% && \
+parted -a optimal /dev/sda name 4 store && \
+mkfs.fat -F32 /dev/sda1 && \
+mkfs.ext4 /dev/sda2 && \
+mkfs.ext4 /dev/sda3 && \
+mkfs.ext4 /dev/sda4 && \
+mount /dev/sda2 /mnt && \
 mkdir /mnt/boot && mkdir /mnt/home && mkdir /mnt/Store && \
-mount /dev/nvme0n1p1 /mnt/boot/ && mount /dev/nvme0n1p4 /mnt/Store/
+mount /dev/sda1 /mnt/boot/ && mount /dev/sda4 /mnt/Store/
 ```
 
 ## Install base, change shell
 ```bash
-pacstrap /mnt grub base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog i3 clipmenu rofi curl udiskie \
+pacstrap /mnt grub base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog clipmenu curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
 lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings \
-linux linux-firmware intel-ucode fzf archey3  ttf-dejavu lxappearance ncdu arandr xorg-xrandr dunst \
+linux linux-firmware intel-ucode fzf archey3  ttf-dejavu lxappearance ncdu arandr xorg-xrandr \
 chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet
 ```
 ## generate fstab and change root
