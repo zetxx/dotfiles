@@ -38,7 +38,7 @@ mount /dev/sda1 /mnt/boot/ && mount /dev/sda4 /mnt/Store/
 pacstrap /mnt grub base openssh zsh git dhcp grub sudo base-devel vim iw wpa_supplicant dialog clipmenu curl udiskie \
 libinput networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc \
 lightdm lightdm-gtk-greeter gnome-keyring htop libva-intel-driver acpi alsa-tools tlp zip p7zip clipnotify lightdm-gtk-greeter-settings \
-linux linux-firmware intel-ucode fzf archey3  ttf-dejavu lxappearance ncdu arandr xorg-xrandr \
+linux linux-firmware intel-ucode fzf archey3  ttf-dejavu lxappearance ncdu arandr xorg-xrandr xfce4 xfce4-goodies \
 chromium xorg-server alsa-utils xorg-fonts-100dpi ttf-bitstream-vera freetype2 xorg-fonts-type1 network-manager-applet
 ```
 ## generate fstab and change root
@@ -67,7 +67,7 @@ chsh -s /bin/zsh
 
 ## Hostname and time
 ```bash
-echo xps13 > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
+echo x240 > /etc/hostname && ln -sf /usr/share/zoneinfo/Europe/Sofia /etc/localtime
 ```
 
 ## Locales:
