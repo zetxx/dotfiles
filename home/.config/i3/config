@@ -219,7 +219,7 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title amixer brightness battery date time layout dunst -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
+    status_command bumblebee-status -m title brightness battery date time layout dunst pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
     font pango:Inconsolata-g for Powerline 9
     position          top
     tray_output       primary
@@ -266,11 +266,12 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 
 exec --no-startup-id /usr/bin/lxpolkit &
-exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" &
+#exec --no-startup-id setxkbmap -layout "us,bg" -variant ",phonetic" -option "grp:ctrls_toggle" &
 exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id slack &
-exec --no-startup-id xcalib /home/zetxx/.dotfiles/screen/color-profile/profile.icm
+exec --no-startup-id xcalib /home/zetxx/.dotfiles/screen/color-profile/profile.icm &
+exec --no-startup-id pasystray 
 #exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg

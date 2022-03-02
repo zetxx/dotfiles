@@ -334,5 +334,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-bluecode-cbs",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-bluecode-cbs",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-nodemcu-esp32-gateway",
+		"rootPath": "/home/zetxx/Arduino/nodemcu-esp32-gateway",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]
