@@ -348,5 +348,82 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "arduino-wemos-d1-mini-gateway",
+		"rootPath": "/home/zetxx/Arduino/wemos-d1-mini-gateway",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-pro-mini-node",
+		"rootPath": "/home/zetxx/Arduino/arduino-pro-mini-node",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-feather-esp32-gateway",
+		"rootPath": "/home/zetxx/Arduino/feather-esp32-gateway",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "impl-application",
+		"rootPath": "/Store/zetxx/Projects/impl-application",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-run",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-run",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mock-corefactor",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mock-corefactor",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-ef3",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-ef3",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "jenkinsfile",
+		"rootPath": "/Store/zetxx/Projects/dev/jenkinsfile",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mfactor",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mfactor",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-port-infosys",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-port-infosys",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "belogradchik.biz",
+		"rootPath": "/Store/zetxx/Projects/belogradchik.biz/workspace.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

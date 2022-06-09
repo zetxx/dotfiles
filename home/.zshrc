@@ -24,3 +24,4 @@ export VISUAL="subl"
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export KUBE_EDITOR='vim'
+export NODE_OPTIONS="--max-old-space-size=12192"
