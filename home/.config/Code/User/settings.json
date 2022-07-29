@@ -1,6 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code'",
     "editor.fontSize": 11,
@@ -168,15 +172,15 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.renderControlCharacters": true,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Default",
     "eslint.format.enable": true,
     "eslint.alwaysShowStatus": true,
     "eslint.run": "onSave",
     "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "cSpell.enableFiletypes": [
         "dockerfile",
@@ -204,7 +208,11 @@
     "diffEditor.wordWrap": "off",
     "[markdown]": {
         "editor.wordWrap": "off",
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
@@ -231,7 +239,6 @@
         }
     },
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "window.zoomLevel": 1,
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
@@ -286,5 +293,8 @@
     "versionlens.caching.duration": 10,
     "git.autoRepositoryDetection": false,
     "editor.guides.indentation": false,
-    "editor.guides.highlightActiveIndentation": false
+    "editor.guides.highlightActiveIndentation": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "npm.keybindingsChangedWarningShown": true,
+    "window.zoomLevel": 1
 }

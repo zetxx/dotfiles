@@ -425,5 +425,40 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-port-ldap",
+		"rootPath": "/Store/zetxx/Projects/impl-mfactor/dev/ut-port-ldap",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "gltui",
+		"rootPath": "/Store/zetxx/Projects/gltui",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "impl-mfactor-postbank",
+		"rootPath": "/Store/zetxx/Projects/impl-mfactor-postbank",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mfactor-sidecar",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mfactor-sidecar",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "rq-ic",
+		"rootPath": "/Store/zetxx/Projects/rq-ic",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]
