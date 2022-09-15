@@ -343,34 +343,6 @@
 		"enabled": true
 	},
 	{
-		"name": "arduino-nodemcu-esp32-gateway",
-		"rootPath": "/home/zetxx/Arduino/nodemcu-esp32-gateway",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "arduino-wemos-d1-mini-gateway",
-		"rootPath": "/home/zetxx/Arduino/wemos-d1-mini-gateway",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "arduino-pro-mini-node",
-		"rootPath": "/home/zetxx/Arduino/arduino-pro-mini-node",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "arduino-feather-esp32-gateway",
-		"rootPath": "/home/zetxx/Arduino/feather-esp32-gateway",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
 		"name": "impl-application",
 		"rootPath": "/Store/zetxx/Projects/impl-application",
 		"paths": [],
@@ -457,6 +429,104 @@
 	{
 		"name": "rq-ic",
 		"rootPath": "/Store/zetxx/Projects/rq-ic",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mfactor-evrotrust",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mfactor-evrotrust",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-namirial",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-namirial",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "impl-mfactor-alianz",
+		"rootPath": "/Store/zetxx/Projects/impl-mfactor-alianz",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mfactor-ultimate",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mfactor-ultimate",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-feather32-personalizer",
+		"rootPath": "/home/zetxx/Arduino/working/feather-esp32/soft-personalizer",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-feather32-gateway",
+		"rootPath": "/home/zetxx/Arduino/working/feather-esp32/gw",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-ttgo-t7v1.3-personalizer",
+		"rootPath": "/home/zetxx/Arduino/working/ttgo-t7v1.3/soft-personalizer",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-ttgo-t7v1.3-gateway",
+		"rootPath": "/home/zetxx/Arduino/working/ttgo-t7v1.3/gw",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-personalizer-ttgo-t8v1.7.1",
+		"rootPath": "/home/zetxx/Arduino/working/ttgo-t8v1.7.1/soft-personalizer",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-gw-ttgo-t8v1.7.1",
+		"rootPath": "/home/zetxx/Arduino/working/ttgo-t8v1.7.1/gw",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-nodemcu-32s-gw",
+		"rootPath": "/home/zetxx/Arduino/working/nodemcu-32s/gw",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-nodemcu-32s-personalizer",
+		"rootPath": "/home/zetxx/Arduino/working/nodemcu-32s/soft-personalizer",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "pro-mini-node",
+		"rootPath": "/home/zetxx/Arduino/working/arduino-pro-mini/node",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "arduino-ttgo-v1.7-wifi-test",
+		"rootPath": "/home/zetxx/Arduino/working/ttgo-t7v1.3/wifi-test",
 		"paths": [],
 		"tags": [],
 		"enabled": true

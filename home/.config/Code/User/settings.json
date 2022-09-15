@@ -240,7 +240,7 @@
     },
     "editor.acceptSuggestionOnCommitCharacter": false,
     "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "workbench.view.alwaysShowHeaderActions": true,
     "breadcrumbs.icons": false,
