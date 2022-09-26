@@ -530,5 +530,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-core",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-core",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "micropython-ttgo-t8-v1.7-ble-test",
+		"rootPath": "/Store/zetxx/Projects/micropython/ttgo-t8-v1.7/ble-test",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]
