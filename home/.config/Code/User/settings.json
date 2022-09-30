@@ -23,9 +23,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "javascript.validate.enable": false,
-    "eslint.options": {
-        "configFile": "/Store/zetxx/Projects/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc"
-    },
     "php.validate.enable": false,
     "editor.tabSize": 4,
     "workbench.editor.tabCloseButton": "off",
@@ -603,11 +600,29 @@
             "hidden": false,
             "rootPath": null,
             "adapterOptions": {}
+        },
+        "LA104CDC": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
         }
     },
     "pymakr.misc.notifications": {
         "ttyUSB0 / unknown seems to be busy. Do you wish restart it in safe mode": "Restart in safe mode",
         "ttyUSB1 / unknown seems to be busy. Do you wish restart it in safe mode": "Don't show again",
         "Uploading a project will delete all existing files on the device before uploading the project folder. After uploading a project, you can start it by restarting the device. For faster uploads without file deletion, please put the device in dev mode.": "Don't show again"
-    }
+    },
+    "eslint.options": {
+        "extensions": [".js", ".jsx"],
+        "overrideConfigFile": "/Store/zetxx/Projects/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc.js"
+    },
+    "eslint.codeActionsOnSave.rules": null,
+    "eslint.nodePath": "/Store/zetxx/Projects/.npm-packages/lib/node_modules",
+    "eslint.workingDirectories": [
+        { "mode": "location" }
+    ]
 }
