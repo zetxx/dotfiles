@@ -35,9 +35,10 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+#bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+#bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+#bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/slate" -font "Ubuntu Mono 24"
+bindsym $mod+d exec i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -125,14 +126,8 @@ set $workspace_www WWW
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
-assign [class="^Chromium$"] $workspace_www
+assign [class="^google-chrome$"] $workspace_www
 assign [class="^Opera$"] $workspace_www
-
-# Workspace RDP
-set $workspace_rdp RDP
-bindsym $mod+p workspace $workspace_rdp
-bindsym $mod+Shift+p move container to workspace $workspace_rdp
-assign [class="^Remmina$"] $workspace_rdp
 
 # Workspace Terminal
 set $workspace_term TERM
@@ -269,11 +264,11 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 
 exec --no-startup-id /usr/bin/lxpolkit &
-exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" &
+exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" -model pc105 &
 exec --no-startup-id nm-applet &
 exec --no-startup-id transmission-qt &
 exec --no-startup-id clipmenud &
-exec --no-startup-id radeon-profile &
+#exec --no-startup-id radeon-profile &
 #exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh &
 exec --no-startup-id solaar -w=hide
 
