@@ -6,7 +6,6 @@ plugins=(git npm archlinux docker web-search battery fzf kubectl docker-compose)
 export TERM="xterm-256color"
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/"
 export EDITOR="subl"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
@@ -25,4 +24,7 @@ export ANDROID_SDK_ROOT='/opt/android-sdk'
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export KUBE_EDITOR='vim'
 export NODE_OPTIONS="--max-old-space-size=12192"
-export NODE_PATH="/Store/zetxx/Projects/.npm-packages/lib/node_modules"
+export NPM_PACKAGES="/Store/zetxx/Projects/.npm-packages"
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules"
+
+export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/"
