@@ -120,6 +120,7 @@ bindsym $mod+n move workspace to output right
 ##       
 # Workspace IDE
 set $workspace_ide "⌨ : e"
+workspace $workspace_ide output HDMI-1
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 #assign [class="^Subl3$"] $workspace_ide
@@ -127,6 +128,7 @@ assign [class="^Code$"] $workspace_ide
 
 # Workspace WWW
 set $workspace_virt "  :b"
+workspace $workspace_virt output HDMI-1
 bindsym $mod+b workspace $workspace_virt
 bindsym $mod+Shift+b move container to workspace $workspace_virt
 assign [class="Lens"] $workspace_virt
@@ -137,6 +139,7 @@ assign [class=".*VirtualBox.*"] $workspace_virt
 
 # Workspace WWW
 set $workspace_www "  :w"
+workspace $workspace_www output eDP-1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
@@ -146,18 +149,21 @@ assign [class="Google-chrome"] $workspace_www
 
 # Workspace RDP
 set $workspace_rdp "  :p"
+workspace $workspace_rdp output eDP-1
 bindsym $mod+p workspace $workspace_rdp
 bindsym $mod+Shift+p move container to workspace $workspace_rdp
 assign [class="^Remmina$"] $workspace_rdp
 
 # Workspace Terminal
 set $workspace_term " : t"
+workspace $workspace_term output DP-2
 bindsym $mod+t workspace $workspace_term
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
 
 # Workspace SQL
 set $workspace_sql "  :s"
+workspace $workspace_sql output DP-2
 bindsym $mod+s workspace $workspace_sql
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 #assign [class="^Valentina Studio$"] $workspace_sql
@@ -165,6 +171,7 @@ assign [class="^DBeaver$"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat "  :c"
+workspace $workspace_chat output DP-2
 bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
@@ -173,6 +180,7 @@ assign [class="Viber"] $workspace_chat
 
 # Workspace MEDIA
 set $workspace_media "  :u"
+workspace $workspace_chat output DP-2
 bindsym $mod+u workspace $workspace_media
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media

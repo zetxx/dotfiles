@@ -21,7 +21,6 @@ alias gus='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 alias gbd='for dir in ./*; do (echo "$dir"; git -C "$dir" branch; echo "----------------"); done'
 export VISUAL="subl"
 export ANDROID_SDK_ROOT='/opt/android-sdk'
-export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export KUBE_EDITOR='vim'
 export NODE_OPTIONS="--max-old-space-size=12192"
 export NPM_PACKAGES="/Store/zetxx/Projects/.npm-packages"
