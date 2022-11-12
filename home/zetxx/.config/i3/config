@@ -126,7 +126,8 @@ set $workspace_www WWW
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
-assign [class="^google-chrome$"] $workspace_www
+assign [class="^Google-chrome$"] $workspace_www
+#for_window [class="^Google-chrome$"] move container to workspace $workspace_www
 assign [class="^Opera$"] $workspace_www
 
 # Workspace Terminal
