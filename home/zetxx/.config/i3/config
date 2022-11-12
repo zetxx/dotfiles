@@ -265,7 +265,6 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 
 exec --no-startup-id /usr/bin/lxpolkit &
-exec --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:ctrls_toggle" -model pc105 &
 exec --no-startup-id nm-applet &
 exec --no-startup-id transmission-qt &
 exec --no-startup-id clipmenud &
