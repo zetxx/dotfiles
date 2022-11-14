@@ -240,14 +240,12 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "workbench.view.alwaysShowHeaderActions": true,
-    "breadcrumbs.icons": false,
     "breadcrumbs.showConstants": false,
     "breadcrumbs.showEnumMembers": false,
     "breadcrumbs.showEnums": false,
     "breadcrumbs.showFields": false,
     "breadcrumbs.showConstructors": false,
     "breadcrumbs.showEvents": false,
-    "breadcrumbs.showArrays": false,
     "breadcrumbs.showClasses": false,
     "breadcrumbs.showFunctions": false,
     "breadcrumbs.showInterfaces": false,
@@ -624,5 +622,6 @@
     "eslint.nodePath": "/Store/zetxx/Projects/.npm-packages/lib/node_modules",
     "eslint.workingDirectories": [
         { "mode": "location" }
-    ]
+    ],
+    "workbench.editor.highlightModifiedTabs": true
 }
