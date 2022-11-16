@@ -127,6 +127,7 @@ assign [class="^Code$"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
+workspace $workspace_www output eDP-1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
