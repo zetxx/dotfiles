@@ -30,6 +30,7 @@
     "editor.trimAutoWhitespace": true,
     "cSpell.userWords": [
         "accum",
+        "acum",
         "Angelov",
         "APIs",
         "aptra",
@@ -47,9 +48,12 @@
         "clonedeep",
         "CONCAT",
         "console",
+        "corefactor",
         "crypted",
         "customisation",
         "CVVs",
+        "datamart",
+        "datamartstaging",
         "DATETIME",
         "datetimeoffset",
         "decimalisation",
@@ -57,8 +61,11 @@
         "docx",
         "Dropdown",
         "Dukpt",
+        "edms",
+        "Efcom",
         "Elin",
         "embozer",
+        "esign",
         "evrotrust",
         "executesql",
         "garmin",
@@ -81,6 +88,7 @@
         "log",
         "Luhn",
         "Luno",
+        "mfactor",
         "ministatement",
         "mkac",
         "mksmi",
@@ -98,6 +106,7 @@
         "payshield",
         "pdol",
         "pino",
+        "Postbank",
         "postpublish",
         "postversion",
         "precommit",
@@ -113,6 +122,7 @@
         "sernum",
         "Setex",
         "smalldatetime",
+        "softwaregroup",
         "sqls",
         "ssid",
         "templates",
@@ -120,11 +130,13 @@
         "Tmkvv",
         "uasyncio",
         "unflatten",
+        "utmfactor",
         "uuid",
         "uuidv",
         "varbinary",
         "VARCHAR",
         "Verifone",
+        "Workstep",
         "Xsrf",
         "zpkkvv"
     ],
@@ -291,7 +303,6 @@
     "editor.guides.highlightActiveIndentation": false,
     "security.workspace.trust.untrustedFiles": "open",
     "npm.keybindingsChangedWarningShown": true,
-    "window.zoomLevel": 1,
     "pymakr.devices.configs": {
         "serial:///dev/ttyS0": {
             "autoConnect": "onLostConnection",
@@ -607,6 +618,42 @@
             "hidden": false,
             "rootPath": null,
             "adapterOptions": {}
+        },
+        "serial:///dev/ttyACM0": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
+        },
+        "HIDPC": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
+        },
+        "serial:///dev/ttyACM1": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
+        },
+        "serial:///dev/ttyACM2": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
         }
     },
     "pymakr.misc.notifications": {
@@ -623,5 +670,11 @@
     "eslint.workingDirectories": [
         { "mode": "location" }
     ],
-    "workbench.editor.highlightModifiedTabs": true
+    "workbench.editor.highlightModifiedTabs": true,
+    "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": 1,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false
 }

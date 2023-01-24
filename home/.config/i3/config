@@ -174,6 +174,7 @@ workspace $workspace_chat output DP-2
 bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
+assign [class="^Pidgin$"] $workspace_chat
 assign [class=".*Skype.*"] $workspace_chat
 assign [class="Viber"] $workspace_chat
 

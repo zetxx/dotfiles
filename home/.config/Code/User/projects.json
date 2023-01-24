@@ -551,5 +551,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "impl-mfactor-demo",
+		"rootPath": "/Store/zetxx/Projects/impl-mfactor-demo",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "docker-registry",
+		"rootPath": "/Store/zetxx/Projects/docker-registry",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]
