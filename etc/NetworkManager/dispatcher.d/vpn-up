@@ -1,0 +1,15 @@
+#! /bin/bash
+
+REQUIRED_CONNECTION_NAME="Home Wired"
+VPN_CONNECTION_NAME="sg"
+
+
+activ_con=$(nmcli con show --active | grep "${REQUIRED_CONNECTION_NAME}")
+activ_vpn=$(nmcli con show --active | grep "${VPN_CONNECTION_NAME}")
+if [ "${activ_con}" -a ! "${activ_vpn}" ];
+then
+    if awk '{ exit (int($1) > 600) }' /proc/uptime; then
+	nmcli con up "${VPN_CONNECTION_NAME}" passwd-file /home/zetxx/openvpn/password
+    fi
+fi
+
