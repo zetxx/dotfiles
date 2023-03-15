@@ -191,7 +191,7 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title date pasink time layout_xkb -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us interval=1 -t greyish-powerline
+    status_command bumblebee-status -m title date pasink dunst time layout_xkb -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us interval=1 -t greyish-powerline
     font pango:Ubuntu Mono 12
     position          top
     tray_output       primary
