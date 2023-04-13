@@ -65,6 +65,8 @@
         "Efcom",
         "Elin",
         "embozer",
+        "EOMONTH",
+        "errmsg",
         "esign",
         "evrotrust",
         "executesql",
@@ -128,6 +130,7 @@
         "templates",
         "tmkkvv",
         "Tmkvv",
+        "TRANCOUNT",
         "uasyncio",
         "unflatten",
         "utmfactor",
@@ -676,5 +679,11 @@
     "files.associations": {
         "*.js": "javascript"
     },
-    "terminal.integrated.enableMultiLinePasteWarning": false
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "arduino.useArduinoCli": true,
+    "C_Cpp.intelliSenseCacheSize": 512,
+    "cmake.configureSettings": {}
 }

@@ -565,5 +565,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "ut-wallet",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-wallet",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ut-mfactor-payment-postbank",
+		"rootPath": "/Store/zetxx/Projects/dev/ut-mfactor-payment-postbank",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

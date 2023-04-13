@@ -123,10 +123,11 @@ set $workspace_ide "⌨ : e"
 workspace $workspace_ide output HDMI-1
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
-#assign [class="^Subl$"] $workspace_ide
+assign [class="Subl"] $workspace_ide
 assign [class="^Code$"] $workspace_ide
+assign [class="^VSCodium$"] $workspace_ide
 
-# Workspace WWW
+# Workspace virtual
 set $workspace_virt "  :b"
 workspace $workspace_virt output DP-2
 bindsym $mod+b workspace $workspace_virt
