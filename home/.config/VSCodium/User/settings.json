@@ -674,7 +674,6 @@
     ],
     "workbench.editor.highlightModifiedTabs": true,
     "diffEditor.renderSideBySide": false,
-    "window.zoomLevel": 1,
     "files.associations": {
         "*.js": "javascript"
     },
@@ -683,5 +682,8 @@
         "editor.formatOnType": true
     },
     "arduino.useArduinoCli": true,
-    "C_Cpp.intelliSenseCacheSize": 512
+    "C_Cpp.intelliSenseCacheSize": 512,
+    "cSpell.languageSettings": [],
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "window.zoomLevel": 1
 }

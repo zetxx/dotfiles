@@ -685,5 +685,6 @@
     },
     "arduino.useArduinoCli": true,
     "C_Cpp.intelliSenseCacheSize": 512,
-    "cmake.configureSettings": {}
+    "cmake.configureSettings": {},
+    "cSpell.languageSettings": []
 }
