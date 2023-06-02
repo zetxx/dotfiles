@@ -579,5 +579,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "golden cheetah",
+		"rootPath": "/Store/zetxx/Projects/docker/gc",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "water-weel-fill-rate",
+		"rootPath": "/Store/zetxx/Projects/water-weel-fill-rate",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

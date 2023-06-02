@@ -657,6 +657,24 @@
             "hidden": false,
             "rootPath": null,
             "adapterOptions": {}
+        },
+        "serial:///dev/ttyUSB0": {
+            "autoConnect": "onLostConnection",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": null,
+            "adapterOptions": {}
+        },
+        "01642B97": {
+            "autoConnect": "never",
+            "name": "",
+            "username": "micro",
+            "password": "python",
+            "hidden": false,
+            "rootPath": "/",
+            "adapterOptions": {}
         }
     },
     "pymakr.misc.notifications": {
