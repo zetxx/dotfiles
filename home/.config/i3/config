@@ -129,7 +129,7 @@ assign [class="^VSCodium$"] $workspace_ide
 
 # Workspace virtual
 set $workspace_virt "  :b"
-workspace $workspace_virt output DP-2
+workspace $workspace_virt output DP-2-1
 bindsym $mod+b workspace $workspace_virt
 bindsym $mod+Shift+b move container to workspace $workspace_virt
 assign [class="Lens"] $workspace_virt
@@ -156,14 +156,14 @@ assign [class="^Remmina$"] $workspace_rdp
 
 # Workspace Terminal
 set $workspace_term " : t"
-workspace $workspace_term output DP-2
+workspace $workspace_term output DP-2-1
 bindsym $mod+t workspace $workspace_term
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
 
 # Workspace SQL
 set $workspace_sql "  :s"
-workspace $workspace_sql output DP-2
+workspace $workspace_sql output DP-2-1
 bindsym $mod+s workspace $workspace_sql
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 #assign [class="^Valentina Studio$"] $workspace_sql
@@ -171,7 +171,7 @@ assign [class="^DBeaver$"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat "  :c"
-workspace $workspace_chat output DP-2
+workspace $workspace_chat output DP-2-1
 bindsym $mod+c workspace $workspace_chat
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^Slack$"] $workspace_chat
@@ -181,7 +181,7 @@ assign [class="Viber"] $workspace_chat
 
 # Workspace MEDIA
 set $workspace_media "  :u"
-workspace $workspace_chat output DP-2
+workspace $workspace_chat output DP-2-1
 bindsym $mod+u workspace $workspace_media
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
