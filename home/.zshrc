@@ -20,10 +20,11 @@ alias exo-open-term='exo-open --launch TerminalEmulator'
 alias gus='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 alias gbd='for dir in ./*; do (echo "$dir"; git -C "$dir" branch; echo "----------------"); done'
 export VISUAL="subl"
-export ANDROID_SDK_ROOT='/opt/android-sdk'
+export ANDROID_HOME='/home/zetxx/Android/Sdk'
+export ANDROID_USER_HOME='/home/zetxx/.android'
 export KUBE_EDITOR='vim'
 export NODE_OPTIONS="--max-old-space-size=12192"
 export NPM_PACKAGES="/Store/zetxx/Projects/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules"
 
-export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/"
+export PATH="/usr/local/bin:$PATH:$NPM_PACKAGES/bin:$HOME/.local/bin/:/opt/android-sdk/emulator/"
