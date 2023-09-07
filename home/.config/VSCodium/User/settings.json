@@ -685,5 +685,6 @@
     "C_Cpp.intelliSenseCacheSize": 512,
     "cSpell.languageSettings": [],
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false
 }

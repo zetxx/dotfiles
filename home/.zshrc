@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
-plugins=(git npm archlinux docker web-search battery fzf kubectl docker-compose)
+plugins=(git npm archlinux docker web-search fzf battery kubectl docker-compose)
 export TERM="xterm-256color"
 source $ZSH/oh-my-zsh.sh
 
