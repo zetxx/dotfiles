@@ -127,7 +127,6 @@ bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="^Firefox$"] $workspace_www
 assign [class="^Google-chrome$"] $workspace_www
-#for_window [class="^Google-chrome$"] move container to workspace $workspace_www
 assign [class="^Opera$"] $workspace_www
 
 # Workspace Terminal
@@ -266,10 +265,8 @@ bindsym $mod+Shift+e mode "$mode_system"
 
 exec --no-startup-id /usr/bin/lxpolkit &
 exec --no-startup-id nm-applet &
-exec --no-startup-id transmission-qt &
 exec --no-startup-id clipmenud &
 #exec --no-startup-id radeon-profile &
-#exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh &
 exec --no-startup-id solaar -w=hide &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
