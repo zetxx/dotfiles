@@ -1,0 +1,151 @@
+output HDMI-A-2 pos 0,0 res 3840x2160
+set $mod Mod4
+font pango:Ubuntu Mono 12
+for_window [class="^.*"] border pixel 1
+floating_modifier $mod
+bindsym $mod+Return exec terminator
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec dmenu_path | dmenu | xargs swaymsg exec --
+bindsym $mod+Shift+r reload
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+bindsym $mod+Control+Left workspace prev
+bindsym $mod+Control+Right workspace next
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+set $workspace_ide IDE
+bindsym $mod+e workspace $workspace_ide
+bindsym $mod+Shift+i move container to workspace $workspace_ide
+assign [class="^Subl3$"] $workspace_ide
+assign [class="^Code$"] $workspace_ide
+set $workspace_www WWW
+bindsym $mod+w workspace $workspace_www
+bindsym $mod+Shift+w move container to workspace $workspace_www
+assign [class="^Firefox$"] $workspace_www
+assign [class="^Google-chrome$"] $workspace_www
+assign [class="^Opera$"] $workspace_www
+set $workspace_term TERM
+bindsym $mod+t workspace $workspace_term
+bindsym $mod+Shift+t move container to workspace $workspace_term
+assign [class="^Terminator$"] $workspace_term
+set $workspace_sql SQL
+bindsym $mod+s workspace $workspace_sql
+bindsym $mod+Shift+s move container to workspace $workspace_sql
+assign [class="^Valentina Studio$"] $workspace_sql
+set $workspace_chat CHAT
+bindsym $mod+c workspace $workspace_chat
+bindsym $mod+Shift+c move container to workspace $workspace_chat
+assign [class="^Slack$"] $workspace_chat
+assign [class=".*Skype.*"] $workspace_chat
+bindsym $mod+m move workspace to output left
+bindsym $mod+n move workspace to output right
+mode "resize" {
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+set $volumepath ~/i3-volume
+set $statuscmd i3status
+set $statussig SIGUSR1
+set $volumestep 2
+bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3lock-fancy -p && sleep 1, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$mode_system"
+client.focused #526532 #526532 #ffffff #a4cb64
+client.focused_inactive #aea79f #aea79f #3c3b37 #aea79f
+client.unfocused #3c3b37 #3c3b37 #aea79f #3c3b37
+client.urgent #FF0000 #FF0000 #ffffff #FF0000
+
+bar {
+    status_command bumblebee-status -m title date pasink dunst time -t greyish-powerline -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" interval=1
+    font pango:Ubuntu Mono 34
+    position          top
+    tray_output       primary
+
+    colors {
+        separator #ffffff
+        background #3c3b37
+        statusline #ffffff
+        focused_workspace #526532 #526532 #ffffff
+        active_workspace #aea79f #aea79f #3c3b37
+        inactive_workspace #3c3b37 #3c3b37 #aea79f
+        urgent_workspace #FF0000 #FF0000 #ffffff
+    }
+}
+
+include /etc/sway/config.d/*
+
+exec --no-startup-id /usr/bin/lxpolkit &
+exec --no-startup-id nm-applet &
+#exec --no-startup-id transmission-qt &
+exec --no-startup-id clipmenud &
+#exec --no-startup-id radeon-profile &
+#exec --no-startup-id /home/zetxx/dotfiles/home/zetxx/.screenlayout/hisense.sh &
+exec --no-startup-id solaar -w=hide &
+exec --no-startup-id blueman-applet &
+#exec --no-startup-id pasystray &
+exec --no-startup-id /usr/bin/steam -silent %U
