@@ -686,5 +686,10 @@
     "cSpell.languageSettings": [],
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "window.zoomLevel": 1,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorCustomizations": {
+        "editor.wordHighlightBackground": "#a31111",
+        "editor.inactiveSelectionBackground": "#a31111",
+        "editor.selectionHighlightBackground": "#a31111"
+    }
 }
