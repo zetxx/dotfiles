@@ -123,7 +123,7 @@ set $workspace_ide "⌨ :e"
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
 assign [class="^Subl3$"] $workspace_ide
-assign [class="^Code$"] $workspace_ide
+assign [class="VSCodium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"

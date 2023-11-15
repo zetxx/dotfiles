@@ -1,6 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.quickSuggestions": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
   "editor.fontFamily": "'DejaVu Sans Mono'",
   "editor.fontSize": 12,
   "files.exclude": {
@@ -100,15 +104,14 @@
     "authenticationType": "SqlLogin",
     "emptyPasswordInput": false,
     "savePassword": true
-  }],
-  "workbench.activityBar.visible": true,
+  }
+],
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vs-seti",
   "editor.codeLens": true,
   "workbench.statusBar.visible": true,
   "editor.minimap.enabled": false,
-  "editor.renderIndentGuides": false,
   "typescript.check.npmIsInstalled": false,
   "terminal.explorerKind": "external",
   "terminal.integrated.shell.linux": "/bin/zsh",
@@ -164,5 +167,16 @@
   }],
 "editor.renderControlCharacters": true,
 "editor.fontLigatures": null,
-"python.languageServer": "Microsoft"
+"python.languageServer": "Microsoft",
+"editor.guides.indentation": false,
+"gitProjectManager.baseProjectsFolders": [
+  "/store/Projects/"
+],
+"gitProjectManager.checkRemoteOrigin": false,
+"gitProjectManager.displayProjectPath": true,
+"gitProjectManager.maxDepthRecursion": 8,
+"gitProjectManager.openInNewWindow": true,
+"gitProjectManager.warnIfFolderNotFound": true,
+"arduino.clearOutputOnBuild": true,
+"arduino.useArduinoCli": true
 }
