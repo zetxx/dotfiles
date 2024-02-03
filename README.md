@@ -1,8 +1,8 @@
 # .confs
-## xrandr modes
+## xrandr modes for dell
 ```bash
 # add mode
-xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync && xrandr --addmode HDMI-1 2560x1440_60.00
+xrandr --newmode "2560x1440_33.00"  162.77  2560 2688 2960 3360  1440 1441 1444 1468  -HSync +Vsync && xrandr --addmode HDMI-1 2560x1440_33.00
 # rm mode
-xrandr --delmode HDMI-1 2560x1440_60.00 && xrandr --rmmode 2560x1440_60.00
+xrandr --delmode HDMI-1 2560x1440_33.00 && xrandr --rmmode 2560x1440_33.00
 ```
