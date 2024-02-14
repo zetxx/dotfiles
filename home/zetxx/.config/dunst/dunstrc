@@ -1,5 +1,5 @@
 [global]
-font = Ubuntu Mono 10
+font = Ubuntu Mono 14
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
