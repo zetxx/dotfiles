@@ -113,6 +113,14 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# move workspace
+bindsym $mod+m move workspace to output left
+bindsym $mod+n move workspace to output right
+
+set $prim eDP-1
+set $sec1 DP-5
+## set example: "workspace $workspace_ide output $prim|$sec1"
+
 #Workspace definition
 # Workspace IDE
 set $workspace_ide IDE
