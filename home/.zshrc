@@ -10,7 +10,7 @@ source $ZSH/oh-my-zsh.sh
 export DOTNET_PATH="${HOME}/.dotnet"
 export DOTNET_TOOLS_PATH="${DOTNET_PATH}/tools"
 export NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$DOTNET_PATH:$DOTNET_TOOLS_PATH:$NPM_PACKAGES/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$DOTNET_PATH:$DOTNET_TOOLS_PATH:$NPM_PACKAGES/bin:$HOME/python/env/bin"
 export EDITOR="subl3"
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
@@ -33,3 +33,5 @@ alias gus='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 alias gbd='for dir in ./*; do (echo "$dir"; git -C "$dir" branch; echo "----------------"); done'
 export VISUAL="subl3"
 alias npmi='npm install packageName --cache "/tmp/cache.$RANDOM"'
+alias pip="~/python/env/bin/pip"
+alias vim="nvim"

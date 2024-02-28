@@ -93,7 +93,6 @@
     "uasyncio",
     "zpkkvv"
   ],
-  "workbench.sideBar.location": "right",
   "git.confirmSync": false,
   "window.zoomLevel": 1,
   "mssql.connections": [{
@@ -167,7 +166,7 @@
   }],
 "editor.renderControlCharacters": true,
 "editor.fontLigatures": null,
-"python.languageServer": "Microsoft",
+"python.languageServer": "Default",
 "editor.guides.indentation": false,
 "gitProjectManager.baseProjectsFolders": [
   "/store/Projects/"
@@ -178,5 +177,11 @@
 "gitProjectManager.openInNewWindow": true,
 "gitProjectManager.warnIfFolderNotFound": true,
 "arduino.clearOutputOnBuild": true,
-"arduino.useArduinoCli": true
+"arduino.useArduinoCli": true,
+"python.analysis.extraPaths": [
+  "/home/zetxx/python/mycropython/.micropy/BradenM-micropy-stubs-ebac1d3/stubs"
+],
+"workbench.editor.tabActionLocation": "left",
+"workbench.sideBar.location": "right",
+"workbench.activityBar.location": "hidden"
 }
