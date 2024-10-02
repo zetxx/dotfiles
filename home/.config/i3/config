@@ -1,0 +1,274 @@
+##deps
+focus_on_window_activation urgent
+focus_follows_mouse yes
+set_from_resource $GIT_TOKEN_STATUS echo "$GIT_TOKEN_STATUS"
+
+set $mod Mod4
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:Inconsolata Regular 10
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+# remove windows titlebar
+for_window [class="^.*"] border pixel 1
+
+# Before i3 v4.8, we used to recommend this one as the default:
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# X core fonts rendering does not support right-to-left and this being a bitmap
+# font, it doesn’t scale on retina/hidpi displays.
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec terminator
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start custom dmenu (a program launcher)
+# git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
+bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/slate"
+bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/slate"
+bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/slate"
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+bindsym $mod+Control+Left workspace prev
+bindsym $mod+Control+Right workspace next
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# move workspace
+bindsym $mod+m move workspace to output left
+bindsym $mod+n move workspace to output right
+
+set $prim eDP-1
+set $sec1 DP-5
+
+#Workspace definition
+##       
+# Workspace IDE
+set $workspace_ide "⌨ :e"
+workspace $workspace_ide output $prim
+bindsym $mod+e workspace $workspace_ide
+bindsym $mod+Shift+i move container to workspace $workspace_ide
+assign [class="VSCodium"] $workspace_ide
+
+# Workspace WWW
+set $workspace_www " :w"
+workspace $workspace_www output $sec1
+bindsym $mod+w workspace $workspace_www
+bindsym $mod+Shift+w move container to workspace $workspace_www
+assign [class="^Chromium$"] $workspace_www
+assign [class="^Opera$"] $workspace_www
+
+# Workspace RDP
+set $workspace_virt " :b"
+workspace $workspace_virt output $sec1
+bindsym $mod+b workspace $workspace_virt
+bindsym $mod+Shift+b move container to workspace $workspace_virt
+assign [class="Lens"] $workspace_virt
+assign [class="VirtualBox"] $workspace_virt
+
+# Workspace Terminal
+set $workspace_term " :t"
+bindsym $mod+t workspace $workspace_term
+workspace $workspace_term output $sec1
+bindsym $mod+Shift+t move container to workspace $workspace_term
+assign [class="^Terminator$"] $workspace_term
+
+# Workspace SQL
+set $workspace_sql " :s"
+bindsym $mod+s workspace $workspace_sql
+workspace $workspace_sql output $sec1
+bindsym $mod+Shift+s move container to workspace $workspace_sql
+assign [class="DBeaver"] $workspace_sql
+
+# Workspace CHAT
+set $workspace_chat " :c"
+bindsym $mod+c workspace $workspace_chat
+workspace $workspace_chat output $sec1
+bindsym $mod+Shift+c move container to workspace $workspace_chat
+assign [class="^teams-for-linux"] $workspace_chat
+assign [class="^TelegramDesktop"] $workspace_chat
+assign [class=".*Skype.*"] $workspace_chat
+assign [class="Viber"] $workspace_chat
+assign [class="WebCord"] $workspace_chat
+
+# Workspace MEDIA
+set $workspace_media " :u"
+bindsym $mod+u workspace $workspace_media
+workspace $workspace_media output $sec1
+bindsym $mod+Shift+u move container to workspace $workspace_media
+assign [class=".*Music.*"] $workspace_media
+
+# move workspace
+bindsym $mod+Alt+n move workspace to output left
+bindsym $mod+Alt+m move workspace to output right
+
+# reload the configuration file
+#bindsym $mod+Shift+r reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+
+#title requires - i3ipc-python-git-latest
+bar {
+    status_command bumblebee-status -m title brightness battery date time layout_xkb dunst pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
+    font pango:Inconsolata Regular 10
+    position          top
+    tray_output       primary
+    tray_padding 0
+    colors {
+        focused_workspace  #2f343a #6272a4 #ffffff
+        active_workspace  #2f343a #3c5927 #98c379
+        inactive_workspace #252936 #252936 #b4bdd9
+        urgent_workspace   #2f343a #a46262 #000000
+    }
+}
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Audio
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+set $Locker i3lock-fancy -p && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3lock-fancy -p && sleep 1, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+e mode "$mode_system"
+
+exec --no-startup-id ~/screens.sh  &
+exec --no-startup-id xautolock -time 30 -locker "i3lock-fancy -p" &
+exec --no-startup-id /usr/bin/lxpolkit &
+exec --no-startup-id nm-applet &
+exec --no-startup-id clipmenud &
+exec --no-startup-id redshift &
+exec --no-startup-id blueman-applet &
+exec --no-startup-id pasystray &
+exec --no-startup-id corectrl --minimize-systray &
+exec --no-startup-id teams-for-linux &
