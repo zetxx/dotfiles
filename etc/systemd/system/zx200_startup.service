@@ -1,0 +1,8 @@
+[Unit]
+Description=x200 custom startup script
+
+[Service]
+ExecStart=/home/zetxx/.linux_configs/x200/startup.sh
+
+[Install]
+WantedBy=multi-user.target
