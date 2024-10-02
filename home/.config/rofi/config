@@ -1,0 +1,7 @@
+rofi.cycle:        true
+rofi.lines:        10
+rofi.eh:           2
+rofi.bw:           0
+rofi.padding:      300
+rofi.terminal:     terminator
+rofi.sidebar-mode: true
