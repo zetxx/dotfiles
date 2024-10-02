@@ -1,0 +1,15 @@
+#!/bin/bash
+wired_interfaces="enp0s*"
+
+if [[ "$1" =~ $wired_interfaces ]]; then
+    case "$2" in
+        up)
+            nmcli radio wifi off
+            ;;
+        down)
+            nmcli radio wifi on
+            ;;
+    esac
+elif [[ ! -z $1 ]]; then
+        nmcli radio wifi on
+fi
