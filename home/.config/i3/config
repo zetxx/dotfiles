@@ -1,6 +1,8 @@
 ##deps
-focus_on_window_activation urgent
-focus_follows_mouse yes
+###npm i -g i3-style > i3-style mate -o ../.config/i3/config --reload
+
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
 set_from_resource $GIT_TOKEN_STATUS echo "$GIT_TOKEN_STATUS"
 
 set $mod Mod4
@@ -114,52 +116,45 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
-set $prim eDP-1
-set $sec1 DP-5
-
 #Workspace definition
 ##       
 # Workspace IDE
 set $workspace_ide "⌨ :e"
-workspace $workspace_ide output $prim
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
+assign [class="^Subl3$"] $workspace_ide
 assign [class="VSCodium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
-workspace $workspace_www output $sec1
+workspace $workspace_www output eDP-1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
+assign [class="^Firefox$"] $workspace_www
 assign [class="^Chromium$"] $workspace_www
 assign [class="^Opera$"] $workspace_www
 
 # Workspace RDP
-set $workspace_virt " :b"
-workspace $workspace_virt output $sec1
-bindsym $mod+b workspace $workspace_virt
-bindsym $mod+Shift+b move container to workspace $workspace_virt
-assign [class="Lens"] $workspace_virt
-assign [class="VirtualBox"] $workspace_virt
+set $workspace_rdp " :p"
+bindsym $mod+p workspace $workspace_rdp
+bindsym $mod+Shift+p move container to workspace $workspace_rdp
+assign [class="^Remmina$"] $workspace_rdp
 
 # Workspace Terminal
 set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
-workspace $workspace_term output $sec1
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="^Terminator$"] $workspace_term
 
 # Workspace SQL
 set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
-workspace $workspace_sql output $sec1
 bindsym $mod+Shift+s move container to workspace $workspace_sql
-assign [class="DBeaver"] $workspace_sql
+assign [class="^Valentina Studio$"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat " :c"
 bindsym $mod+c workspace $workspace_chat
-workspace $workspace_chat output $sec1
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^teams-for-linux"] $workspace_chat
 assign [class="^TelegramDesktop"] $workspace_chat
@@ -170,7 +165,6 @@ assign [class="WebCord"] $workspace_chat
 # Workspace MEDIA
 set $workspace_media " :u"
 bindsym $mod+u workspace $workspace_media
-workspace $workspace_media output $sec1
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
@@ -262,13 +256,11 @@ mode "$mode_system" {
 
 bindsym $mod+Shift+e mode "$mode_system"
 
-exec --no-startup-id ~/screens.sh  &
-exec --no-startup-id xautolock -time 30 -locker "i3lock-fancy -p" &
 exec --no-startup-id /usr/bin/lxpolkit &
 exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
-exec --no-startup-id corectrl --minimize-systray &
-exec --no-startup-id teams-for-linux &
+exec --no-startup-id calib /home/zetxx/dotfiles/screen/color-profile/profile.icm &
+exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg
