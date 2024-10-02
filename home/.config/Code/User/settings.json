@@ -160,10 +160,7 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
-  "sonarlint.connectedMode.connections.sonarqube": [{
-      "serverUrl": "https://sonar.softwaregroup.com",
-      "token": "003d460034ff25570906119e81645116a6f59e54"
-  }],
+  "sonarlint.connectedMode.connections.sonarqube": [],
 "editor.renderControlCharacters": true,
 "editor.fontLigatures": null,
 "python.languageServer": "Default",
