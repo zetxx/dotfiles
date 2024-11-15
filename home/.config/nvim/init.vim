@@ -34,6 +34,7 @@ Plug 'hrsh7th/vim-vsnip'
 " Plug 'dcampos/nvim-snippy'
 " Plug 'dcampos/cmp-snippy'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'monkoose/matchparen.nvim'
 
 call plug#end()
 syntax on
