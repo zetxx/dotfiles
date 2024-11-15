@@ -1,0 +1,12 @@
+[user]
+    email = me@zetxx.eu
+    name = zetxx
+[core]
+        editor = nvim
+[diff]
+        guitool = meld
+        external = ~/dotfiles/home/git-meld
+[merge]
+        tool = meld
+[gui]
+        warndetachedcommit = true
