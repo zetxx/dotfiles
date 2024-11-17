@@ -216,7 +216,7 @@ bindsym $mod+r mode "resize"
 
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title brightness battery date time layout_xkb dunst pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
+    status_command bumblebee-status -m title brightness battery date time layout_xkb dunstctl pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=24 battery.critical=18 interval=5 -t dracula-powerline
     font pango:Inconsolata Regular 10
     position          top
     tray_output       primary
