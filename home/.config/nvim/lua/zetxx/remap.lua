@@ -1,15 +1,3 @@
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.undodir="~/.nvim/undodir"
-vim.opt.scrolloff = 8
-vim.opt.updatetime = 500
-vim.opt.colorcolumn = '100'
-vim.opt.relativenumber = true
-vim.opt.wrap = false
-vim.opt.cul = true
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
