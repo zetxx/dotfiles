@@ -1,7 +1,7 @@
 ##deps
 focus_on_window_activation urgent
 focus_follows_mouse yes
-set_from_resource $GIT_TOKEN_STATUS echo "$GIT_TOKEN_STATUS"
+###set_from_resource $GIT_TOKEN_STATUS echo "$GIT_TOKEN_STATUS"
 
 set $mod Mod4
 
