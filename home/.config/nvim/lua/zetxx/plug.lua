@@ -41,5 +41,6 @@ Plug('hrsh7th/cmp-nvim-lsp')
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 Plug('neovim/nvim-lspconfig')
+Plug('mhartington/formatter.nvim')
 
 vim.call('plug#end')
