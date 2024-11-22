@@ -22,9 +22,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "javascript.validate.enable": false,
-  "eslint.options": {
-    "configFile": "/home/zetxx/.npm-packages/lib/node_modules/ut-tools/eslint/.eslintrc"
-  },
+  "eslint.options": {},
   "php.validate.enable": false,
   "editor.tabSize": 4,
   "workbench.editor.tabCloseButton": "left",
