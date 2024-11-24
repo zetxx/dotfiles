@@ -1,4 +1,4 @@
 require("mason-nvim-dap").setup({
-    ensure_installed = { "node2", "js" },
+    ensure_installed = { "js" },
     automatic_installation = true,
 })
