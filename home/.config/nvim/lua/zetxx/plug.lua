@@ -33,5 +33,7 @@ Plug('neovim/nvim-lspconfig')
 -- DAP
 Plug('mfussenegger/nvim-dap')
 Plug('jay-babu/mason-nvim-dap.nvim')
+-- Themes
+Plug('sainnhe/sonokai')
 
 vim.call('plug#end')
