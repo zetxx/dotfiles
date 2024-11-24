@@ -22,10 +22,7 @@ Plug('theHamsta/nvim-dap-virtual-text')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
 Plug('nvim-telescope/telescope-dap.nvim')
-
-Plug('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && npx --yes yarn install' })
 Plug('mbbill/undotree')
-
 -- LSP
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/nvim-cmp')
@@ -33,5 +30,10 @@ Plug('hrsh7th/cmp-nvim-lsp')
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 Plug('neovim/nvim-lspconfig')
+-- DAP
+Plug('mfussenegger/nvim-dap')
+Plug('jay-babu/mason-nvim-dap.nvim')
+-- Themes
+Plug('sainnhe/sonokai')
 
 vim.call('plug#end')
