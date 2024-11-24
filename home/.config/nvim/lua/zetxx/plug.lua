@@ -32,5 +32,6 @@ Plug('williamboman/mason-lspconfig.nvim')
 Plug('neovim/nvim-lspconfig')
 -- DAP
 Plug('mfussenegger/nvim-dap')
+Plug('jay-babu/mason-nvim-dap.nvim')
 
 vim.call('plug#end')
