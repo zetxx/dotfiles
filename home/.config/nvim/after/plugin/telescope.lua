@@ -4,3 +4,14 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope find in git 
 vim.keymap.set('n', '<leader>ps', function()
     builtin.grep_string({ search = vim.fn.input('Grep >') })
 end, { desc = 'Telescope project serch' })
+
+require('telescope').setup {
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules",
+            ".git",
+            ".vscode",
+            "dist"
+        }
+    }
+}
