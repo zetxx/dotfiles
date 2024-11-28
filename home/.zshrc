@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 plugins=(git npm archlinux docker web-search battery fzf docker-compose z)
 source $ZSH/oh-my-zsh.sh
 
