@@ -29,7 +29,6 @@ Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-nvim-lsp')
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
-Plug('neovim/nvim-lspconfig')
 -- DAP
 Plug('mfussenegger/nvim-dap')
 Plug('jay-babu/mason-nvim-dap.nvim')
