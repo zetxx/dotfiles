@@ -64,3 +64,6 @@ cmp.setup({
     },
     mapping = cmp.mapping.preset.insert({}),
 })
+vim.lsp.buf.format {
+  filter = function(client) return client.name ~= "ts_ls" end
+}
