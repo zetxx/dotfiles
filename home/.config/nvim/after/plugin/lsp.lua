@@ -34,10 +34,12 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = {
         'ts_ls',
-        'eslint',
         'bashls',
         'docker_compose_language_service',
         'gopls',
+        'cssls',
+        'dockerls',
+        'biome',
         'html',
         'htmx',
         'sqlls',
@@ -65,5 +67,7 @@ cmp.setup({
 })
 vim.lsp.buf.format {
     async = true,
-    filter = function(client) return client.name ~= "ts_ls" end
+    filter = function(client)
+        return client.name ~= "ts_ls"
+    end
 }
