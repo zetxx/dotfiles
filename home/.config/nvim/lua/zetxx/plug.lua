@@ -13,6 +13,7 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.nvim/plug/')
 
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+Plug('nvim-treesitter/nvim-treesitter-refactor')
 Plug('ray-x/go.nvim')
 Plug('ray-x/starry.nvim')
 Plug('mfussenegger/nvim-dap')
@@ -23,6 +24,11 @@ Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
 Plug('nvim-telescope/telescope-dap.nvim')
 Plug('mbbill/undotree')
+
+-- status line
+Plug('nvim-lualine/lualine.nvim')
+Plug('nvim-tree/nvim-web-devicons')
+
 -- LSP
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/nvim-cmp')
