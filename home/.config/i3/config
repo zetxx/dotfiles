@@ -273,3 +273,4 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
 exec --no-startup-id corectrl --minimize-systray &
 exec --no-startup-id teams-for-linux &
+exec --no-startup-id ~/.dotfiles/home/.config/monitors.sh &
