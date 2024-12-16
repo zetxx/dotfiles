@@ -54,6 +54,9 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+vim.keymap.set('n', 'gf', function()
+    vim.diagnostic.open_float()
+end)
 vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format {
         filter = function(client)
