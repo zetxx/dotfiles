@@ -131,10 +131,10 @@ set $workspace_www " :w"
 workspace $workspace_www output $sec1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
-assign [class="^chromium$"] $workspace_www
+assign [class="^Chromium$"] $workspace_www
 assign [class="^Opera$"] $workspace_www
 
-# Workspace VIRT
+# Workspace RDP
 set $workspace_virt " :b"
 workspace $workspace_virt output $sec1
 bindsym $mod+b workspace $workspace_virt
@@ -147,7 +147,7 @@ set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
 workspace $workspace_term output $sec1
 bindsym $mod+Shift+t move container to workspace $workspace_term
-assign [class="wezterm"] $workspace_term
+assign [class="^Terminator$"] $workspace_term
 
 # Workspace SQL
 set $workspace_sql " :s"
