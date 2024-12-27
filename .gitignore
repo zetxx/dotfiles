@@ -7,5 +7,3 @@ home/.lein/**/*
 !home/.lein/profiles.clj
 home/.config/ranger/**/*
 !home/.config/ranger/rc.conf
-!home/.config/nvimoff-the-reckorud/off-the-reckord/.gitkeep
-home/.config/nvimoff-the-reckorud/off-the-reckord/**/*
