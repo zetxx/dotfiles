@@ -1,4 +1,4 @@
 require("mason-nvim-dap").setup({
-    ensure_installed = { "js" },
+    ensure_installed = { "delve" },
     automatic_installation = true,
 })
