@@ -21,4 +21,3 @@ export BUILDKIT_PROGRESS=plain
 alias exo-open-term='exo-open --launch TerminalEmulator'
 source $HOME/.tokens.sh
 alias pip="~/python/bin/pip"
-alias vim="nvim"
