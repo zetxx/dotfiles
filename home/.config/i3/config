@@ -33,9 +33,9 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run -theme ".config/rofi-custom/User Themes/slate"
-bindsym $mod+d exec rofi -show drun -theme ".config/rofi-custom/User Themes/slate" -dpi 1
-bindsym $mod+Tab exec rofi -show window -theme ".config/rofi-custom/User Themes/slate"
+bindsym $mod+Shift+d exec rofi -show run -dpi 1
+bindsym $mod+d exec rofi -show drun -dpi 1
+bindsym $mod+Tab exec rofi -show window -dpi 1
 
 # change focus
 bindsym $mod+j focus left
