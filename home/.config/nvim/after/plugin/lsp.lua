@@ -43,7 +43,8 @@ require('mason-lspconfig').setup({
         'html',
         'htmx',
         'sqlls',
-        'lua_ls'
+        'lua_ls',
+        'vacuum'
     },
     handlers = {
         function(server_name)
