@@ -273,4 +273,5 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
 exec --no-startup-id corectrl --minimize-systray &
 exec --no-startup-id teams-for-linux &
-exec --no-startup-id steam -slient &
+exec --no-startup-id steam -silent &
+exec --no-startup-id feh --bg-max ~/wp.jpg &
