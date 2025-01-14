@@ -43,7 +43,8 @@ require('mason-lspconfig').setup({
         'html',
         'htmx',
         'sqlls',
-        'lua_ls'
+        'lua_ls',
+        'vacuum'
     },
     handlers = {
         function(server_name)
@@ -65,3 +66,11 @@ cmp.setup({
     },
     mapping = cmp.mapping.preset.insert({}),
 })
+
+-- vacuum
+vim.filetype.add {
+  pattern = {
+    ['openapi.*%.ya?ml'] = 'yaml.openapi',
+    ['openapi.*%.json'] = 'json.openapi',
+  },
+}

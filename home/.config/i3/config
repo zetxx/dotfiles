@@ -147,7 +147,7 @@ set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
 workspace $workspace_term output $sec1
 bindsym $mod+Shift+t move container to workspace $workspace_term
-assign [class="wezterm"] $workspace_term
+assign [class="kitty"] $workspace_term
 
 # Workspace SQL
 set $workspace_sql " :s"
