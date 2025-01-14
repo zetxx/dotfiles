@@ -41,5 +41,6 @@ Plug('mxsdev/nvim-dap-vscode-js')
 Plug('microsoft/vscode-js-debug', { ['do'] = 'npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out'})
 -- Themes
 Plug('sainnhe/sonokai')
+Plug('EdenEast/nightfox.nvim')
 
 vim.call('plug#end')
