@@ -269,7 +269,6 @@ exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
-exec --no-startup-id teams-for-linux &
 exec --no-startup-id calib /home/zetxx/dotfiles/screen/color-profile/profile.icm &
 exec --no-startup-id feh --bg-center ~/Wallpapers/tino/IMG_20180519_180102.jpg &
 exec --no-startup-id ~/.dotfiles/home/.config/monitors.sh &
