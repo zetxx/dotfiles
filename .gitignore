@@ -31,3 +31,8 @@ home/.config/Code/User/workspaceStorage/
 home/.config/Code/languagepacks.json
 home/.config/Code/logs/
 home/.config/Code/machineid
+home/.config/Code/CachedExtensionVSIXs/
+home/.config/Code/Cookies
+home/.config/Code/Cookies-journal
+home/.config/Code/SharedStorage-wal
+home/.config/Code/code.lock
