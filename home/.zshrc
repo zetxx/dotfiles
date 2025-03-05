@@ -16,7 +16,7 @@ export NODE_ENV=development
 export NODE_PATH=$(npm root --quiet -g)
 export GOPATH=/home/zetxx/go
 export GOBIN=${GOPATH}/bin
-export PATH=${PATH}:${NODE_PATH}:$(go env GOBIN)
+export PATH=${PATH}:${NODE_PATH}:$(go env GOBIN):$(npm config get prefix)/bin
 export BUILDKIT_PROGRESS=plain
 alias exo-open-term='exo-open --launch TerminalEmulator'
 source $HOME/.tokens.sh
