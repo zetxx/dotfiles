@@ -132,6 +132,7 @@ workspace $workspace_www output $sec1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="Chromium"] $workspace_www
+assign [class="Google-chrome"] $workspace_www
 assign [class="^Opera$"] $workspace_www
 
 # Workspace VIRT
