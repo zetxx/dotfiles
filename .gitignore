@@ -7,3 +7,32 @@ home/.lein/**/*
 !home/.lein/profiles.clj
 home/.config/ranger/**/*
 !home/.config/ranger/rc.conf
+home/.config/Code/Cache/
+home/.config/Code/CachedData/
+home/.config/Code/CachedProfilesData/
+home/.config/Code/Code Cache/
+home/.config/Code/Crashpad/
+home/.config/Code/DawnGraphiteCache/
+home/.config/Code/DawnWebGPUCache/
+home/.config/Code/Dictionaries/
+home/.config/Code/GPUCache/
+home/.config/Code/Local Storage/
+home/.config/Code/Network Persistent State
+home/.config/Code/Preferences
+home/.config/Code/Session Storage/
+home/.config/Code/Shared Dictionary/
+home/.config/Code/SharedStorage
+home/.config/Code/TransportSecurity
+home/.config/Code/Trust Tokens
+home/.config/Code/Trust Tokens-journal
+home/.config/Code/User/History/
+home/.config/Code/User/globalStorage/
+home/.config/Code/User/workspaceStorage/
+home/.config/Code/languagepacks.json
+home/.config/Code/logs/
+home/.config/Code/machineid
+home/.config/Code/CachedExtensionVSIXs/
+home/.config/Code/Cookies
+home/.config/Code/Cookies-journal
+home/.config/Code/SharedStorage-wal
+home/.config/Code/code.lock
