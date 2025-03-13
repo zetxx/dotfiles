@@ -40,6 +40,7 @@ require('mason-lspconfig').setup({
         'cssls',
         'dockerls',
         'biome',
+        'rust_analyzer',
         'html',
         'htmx',
         'sqlls',

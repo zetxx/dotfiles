@@ -43,4 +43,7 @@ Plug('microsoft/vscode-js-debug', { ['do'] = 'npm install --legacy-peer-deps && 
 Plug('sainnhe/sonokai')
 Plug('EdenEast/nightfox.nvim')
 
+-- Other
+--- Rust
+Plug('mrcjkb/rustaceanvim', {['version'] = '^5'})
 vim.call('plug#end')

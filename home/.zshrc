@@ -14,9 +14,10 @@ alias npmi='npm i --cache "/tmp/cache.$RANDOM"'
 #export CONTAINERD_ROOTLES_SOCK="$(cat /run/user/1000/containerd-rootless/child_pid)"
 export NODE_ENV=development
 export NODE_PATH=$(npm root --quiet -g)
+export NODE_GLOB_ROOT=$(npm config get prefix)
 export GOPATH=/home/zetxx/go
 export GOBIN=${GOPATH}/bin
-export PATH=${PATH}:${NODE_PATH}:$(go env GOBIN)
+export PATH=${PATH}:${NODE_GLOB_ROOT}:$HOME/.cargo/bin:$(go env GOBIN)
 export BUILDKIT_PROGRESS=plain
 alias exo-open-term='exo-open --launch TerminalEmulator'
 source $HOME/.tokens.sh
