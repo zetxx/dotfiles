@@ -1,5 +1,5 @@
 require 'nvim-treesitter.configs'.setup {
-    ensure_installed = { "markdown", "markdown_inline", "go", "typescript", "dockerfile", "ssh_config", "sql", "json", "jsdoc", "lua", "vim", "javascript" },
+    ensure_installed = { "markdown", "markdown_inline", "go", "typescript", "dockerfile", "ssh_config", "sql", "json", "jsdoc", "lua", "vim", "javascript", "rust" },
     sync_install = false,
     auto_install = true,
     indent = {

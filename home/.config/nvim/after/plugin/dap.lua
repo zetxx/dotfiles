@@ -1,6 +1,6 @@
 local dap, dapui = require("dap"), require("dapui")
 require("mason-nvim-dap").setup({
-    ensure_installed = { "delve" },
+    ensure_installed = { "delve", "codelldb" },
     automatic_installation = true,
 })
 
