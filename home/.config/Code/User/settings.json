@@ -183,5 +183,9 @@
   "/store/Projects/nodejs/bridg-wrong-playground",
   "/store/Projects/nodejs/bridg-wrong"
 ],
-"gitProjectManager.searchInsideProjects": false
+"gitProjectManager.searchInsideProjects": false,
+"files.associations": {
+  "*.eta": "html"
+},
+"security.workspace.trust.untrustedFiles": "open"
 }
