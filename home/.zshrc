@@ -20,5 +20,5 @@ export GOBIN=${GOPATH}/bin
 export PATH=${PATH}:${NODE_GLOB_ROOT}:$HOME/.cargo/bin:$(go env GOBIN)
 export BUILDKIT_PROGRESS=plain
 alias exo-open-term='exo-open --launch TerminalEmulator'
-source $HOME/.tokens.sh
+source $HOME/.secrets.sh
 alias pip="~/python/bin/pip"
