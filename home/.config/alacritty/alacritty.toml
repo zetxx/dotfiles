@@ -1,0 +1,14 @@
+[font]
+size = 11
+[font.normal]
+family = "Ubuntu Mono"
+style = "Regular"
+[font.bold]
+family = "Ubuntu Mono"
+style = "Bold"
+[font.bold_italic]
+family = "Ubuntu Mono"
+style = "Bold Italic"
+[font.italic]
+family = "Ubuntu Mono"
+style = "Italic"
