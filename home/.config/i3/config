@@ -26,7 +26,7 @@ for_window [class="^.*"] border pixel 1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -115,7 +115,7 @@ bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
 set $prim eDP-1
-set $sec1 DP-5
+set $sec1 DisplayPort-0
 
 #Workspace definition
 ##       
