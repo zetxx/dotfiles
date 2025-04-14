@@ -116,6 +116,7 @@ bindsym $mod+n move workspace to output right
 
 set $prim eDP-1
 set $sec1 DisplayPort-0
+set $third1 HDMI-A-0
 
 #Workspace definition
 ##       
@@ -128,7 +129,7 @@ assign [class="VSCodium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
-workspace $workspace_www output $sec1
+workspace $workspace_www output $third1
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="Chromium"] $workspace_www
@@ -137,7 +138,7 @@ assign [class="^Opera$"] $workspace_www
 
 # Workspace VIRT
 set $workspace_virt " :b"
-workspace $workspace_virt output $sec1
+workspace $workspace_virt output $third1
 bindsym $mod+b workspace $workspace_virt
 bindsym $mod+Shift+b move container to workspace $workspace_virt
 assign [class="Lens"] $workspace_virt
@@ -153,14 +154,14 @@ assign [class="kitty"] $workspace_term
 # Workspace SQL
 set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
-workspace $workspace_sql output $sec1
+workspace $workspace_sql output $third1
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 assign [class="DBeaver"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat " :c"
 bindsym $mod+c workspace $workspace_chat
-workspace $workspace_chat output $sec1
+workspace $workspace_chat output $third1
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^teams-for-linux"] $workspace_chat
 assign [class="^TelegramDesktop"] $workspace_chat
@@ -171,7 +172,7 @@ assign [class="WebCord"] $workspace_chat
 # Workspace MEDIA
 set $workspace_media " :u"
 bindsym $mod+u workspace $workspace_media
-workspace $workspace_media output $sec1
+workspace $workspace_media output $third1
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
