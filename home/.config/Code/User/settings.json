@@ -187,5 +187,9 @@
 "files.associations": {
   "*.eta": "html"
 },
-"security.workspace.trust.untrustedFiles": "open"
+"security.workspace.trust.untrustedFiles": "open",
+"chat.commandCenter.enabled": false,
+"workbench.layoutControl.enabled": false,
+"workbench.navigationControl.enabled": false,
+"window.commandCenter": false
 }
