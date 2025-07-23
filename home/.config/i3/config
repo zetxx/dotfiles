@@ -33,9 +33,9 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run 
-bindsym $mod+d exec rofi -show drun
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Shift+d exec rofi -show run -dpi 1
+bindsym $mod+d exec rofi -show drun -dpi 1
+bindsym $mod+Tab exec rofi -show window -dpi 1
 
 # change focus
 bindsym $mod+j focus left
@@ -216,10 +216,11 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-
+set $volumepath ~/i3-volume
+set $volumestep 2
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title brightness battery date time layout_xkb dunst pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
+    status_command bumblebee-status -m title date dunstctl time layout_xkb pasink pasource -p dunstctl.disabled="True" date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=24 battery.critical=18 interval=5 -t dracula-powerline
     font pango:Inconsolata Regular 10
     position          top
     tray_output       primary
@@ -243,9 +244,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Audio
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
 
 set $Locker i3lock-fancy -p && sleep 1
 
@@ -275,3 +276,5 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
 exec --no-startup-id corectrl --minimize-systray &
 exec --no-startup-id teams-for-linux &
+exec --no-startup-id steam -silent &
+exec --no-startup-id feh --bg-max ~/wp.jpg &

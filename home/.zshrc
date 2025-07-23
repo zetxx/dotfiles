@@ -17,8 +17,7 @@ export NODE_PATH=$(npm root --quiet -g)
 export NODE_GLOB_ROOT=$(npm config get prefix)
 export GOPATH=/home/zetxx/go
 export GOBIN=${GOPATH}/bin
-export PATH=${PATH}:${NODE_GLOB_ROOT}:$HOME/.cargo/bin:/opt/android-sdk/platform-tools:$(go env GOBIN)
-export ANDROID_HOME=/opt/android-sdk/
+export PATH=${PATH}:${NODE_GLOB_ROOT}:$HOME/.cargo/bin:$(go env GOBIN):${NODE_PATH}:$(npm config get prefix)/bin
 export BUILDKIT_PROGRESS=plain
 alias exo-open-term='exo-open --launch TerminalEmulator'
 source $HOME/.secrets.sh
