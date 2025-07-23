@@ -43,7 +43,7 @@ require('mason-lspconfig').setup({
         'rust_analyzer',
         'html',
         'htmx',
-        'sqlls',
+        --'sqlls',
         'lua_ls',
         'vacuum'
     },
