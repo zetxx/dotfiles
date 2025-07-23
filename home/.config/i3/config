@@ -115,8 +115,8 @@ bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
 set $prim eDP-1
-set $sec1 DisplayPort-0
-set $third1 HDMI-A-0
+set $sec1 DisplayPort-3
+set $third1 DisplayPort-4
 
 #Workspace definition
 ##       
@@ -129,7 +129,7 @@ assign [class="VSCodium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
-workspace $workspace_www output $third1
+workspace $workspace_www output $prim
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="Chromium"] $workspace_www
