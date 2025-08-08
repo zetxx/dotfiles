@@ -12,3 +12,5 @@ style = "Bold Italic"
 [font.italic]
 family = "Ubuntu Mono"
 style = "Italic"
+[scrolling]
+history = 100000
