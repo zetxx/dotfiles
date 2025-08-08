@@ -1,0 +1,13 @@
+rule = {
+  matches = {
+    {
+      { "node.name", "equals", "bluez_output.BC_87_FA_5B_1D_94" },
+    },
+  },
+  apply_properties = {
+    ["priority.session"] = 1070,
+    ["priority.driver"] = 1070,
+  },
+}
+
+table.insert(bluez_monitor.rules,rule)
