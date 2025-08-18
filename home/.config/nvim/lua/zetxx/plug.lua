@@ -45,5 +45,5 @@ Plug('EdenEast/nightfox.nvim')
 
 -- Other
 --- Rust
-Plug('mrcjkb/rustaceanvim', {['version'] = '^5'})
+Plug('mrcjkb/rustaceanvim', {['version'] = '^6'})
 vim.call('plug#end')
