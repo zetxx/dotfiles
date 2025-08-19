@@ -48,8 +48,20 @@ require('mason-lspconfig').setup({
         'vacuum'
     },
     handlers = {
-        function(server_name)
-            require('lspconfig')[server_name].setup({})
+        --function(server_name)
+        --    require('lspconfig')[server_name].setup({})
+        --end,
+        biome = function()
+            require('lspconfig').biome.setup({
+                filetypes = { "javascript", "javascriptreact", "json" },
+                single_file_support = false,
+            })
+        end,
+        ts_ls = function()
+            require('lspconfig').ts_ls.setup({
+                filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+                single_file_support = false,
+            })
         end,
     }
 })
