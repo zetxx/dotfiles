@@ -14,7 +14,8 @@ require('lualine').setup {
                 'filename',
                 file_status = true,
                 path = 1
-            }
+            },
+            'lsp_progress'
         },
         lualine_x = {'encoding'},
     },

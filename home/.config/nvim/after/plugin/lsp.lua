@@ -42,7 +42,7 @@ require('mason-lspconfig').setup({
         'biome',
         'rust_analyzer',
         'html',
-        'htmx',
+        --'htmx',
         --'sqlls',
         'lua_ls',
         'vacuum'
