@@ -42,19 +42,15 @@ require('mason-lspconfig').setup({
         'biome',
         'rust_analyzer',
         'html',
-        'htmx',
+        --'htmx',
         --'sqlls',
         'lua_ls',
         'vacuum'
     },
-    handlers = {
-        function(server_name)
-            if server_name ~= 'rust_analyzer' then
-                require('lspconfig')[server_name].setup({})
-            end
-        end,
-    }
 })
+
+require('lspconfig').biome.setup({})
+require('lspconfig').ts_ls.setup({})
 
 local cmp = require('cmp')
 

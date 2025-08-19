@@ -23,6 +23,7 @@ Plug('mbbill/undotree')
 
 -- status line
 Plug('nvim-lualine/lualine.nvim')
+Plug 'arkav/lualine-lsp-progress'
 Plug('nvim-tree/nvim-web-devicons')
 
 -- LSP
@@ -46,4 +47,5 @@ Plug('EdenEast/nightfox.nvim')
 -- Other
 --- Rust
 Plug('mrcjkb/rustaceanvim', {['version'] = '^6'})
+
 vim.call('plug#end')
