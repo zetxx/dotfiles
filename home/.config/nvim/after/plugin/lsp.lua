@@ -49,8 +49,10 @@ require('mason-lspconfig').setup({
     },
 })
 
-require('lspconfig').biome.setup({})
-require('lspconfig').ts_ls.setup({})
+vim.lsp.config("biome", {})
+vim.lsp.enable({"biome"})
+vim.lsp.config("ts_ls", {})
+vim.lsp.enable({"ts_ls"})
 
 local cmp = require('cmp')
 
