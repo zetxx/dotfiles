@@ -114,9 +114,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
-set $prim eDP-1
-set $sec1 DisplayPort-3
-set $third1 DisplayPort-4
+set $prim DP-2
 
 #Workspace definition
 ##       
