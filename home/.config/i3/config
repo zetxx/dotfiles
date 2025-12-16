@@ -265,6 +265,7 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 
 #exec --no-startup-id xautolock -time 30 -locker "i3lock-fancy -p" &
+exec --no-startup-id sh -c 'sleep 2; xrandr --output HDMI-1 --mode 3840x2160 --rate 120 --primary --output DP-2 --mode 640x480 --pos 0x6000 > /tmp/xrandr.after_i3 2>&1' &
 exec --no-startup-id /usr/bin/lxpolkit &
 exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
