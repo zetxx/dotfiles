@@ -1,0 +1,19 @@
+xrandr \
+  --output HDMI-1 --mode 3840x2160 --rate 120 --primary \
+  --output DP-2 --mode 320x180 --pos 0x6000
+
+# HiDPI 2x scaling (X11)
+export XFT_DPI=192
+
+# GTK
+export GDK_SCALE=2
+export GDK_DPI_SCALE=1
+
+# Qt
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCALE_FACTOR=2
+export QT_FONT_DPI=192
+export QT_ENABLE_HIGHDPI_SCALING=0
+export AMD_VULKAN_ICD=RADV
+
+xrdb -merge ~/.Xresources
