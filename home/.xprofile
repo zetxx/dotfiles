@@ -16,7 +16,7 @@ export QT_FONT_DPI=192
 export QT_ENABLE_HIGHDPI_SCALING=0
 export AMD_VULKAN_ICD=RADV
 
-xpointerbarrier 0 0 0 10 &
+xpointerbarrier 0 0 0 2 &
 
 xrdb -merge ~/.Xresources
 
