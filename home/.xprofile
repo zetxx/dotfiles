@@ -6,7 +6,7 @@ xrandr \
 export XFT_DPI=192
 
 # GTK
-export GDK_SCALE=2
+export GDK_SCALE=1.5
 export GDK_DPI_SCALE=1
 
 # Qt
@@ -16,4 +16,7 @@ export QT_FONT_DPI=192
 export QT_ENABLE_HIGHDPI_SCALING=0
 export AMD_VULKAN_ICD=RADV
 
+xpointerbarrier 0 0 0 10 &
+
 xrdb -merge ~/.Xresources
+
