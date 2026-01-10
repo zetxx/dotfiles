@@ -114,7 +114,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
-set $prim DP-2
+set $prim HDMI-1
 
 #Workspace definition
 ##       
@@ -127,7 +127,7 @@ assign [class="VSCodium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
-workspace $workspace_www output $third1
+workspace $workspace_www output $prim
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="Chromium"] $workspace_www
@@ -136,7 +136,7 @@ assign [class="^Opera$"] $workspace_www
 
 # Workspace VIRT
 set $workspace_virt " :b"
-workspace $workspace_virt output $third1
+workspace $workspace_virt output $prim
 bindsym $mod+b workspace $workspace_virt
 bindsym $mod+Shift+b move container to workspace $workspace_virt
 assign [class="Lens"] $workspace_virt
@@ -145,7 +145,7 @@ assign [class="VirtualBox"] $workspace_virt
 # Workspace Terminal
 set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
-workspace $workspace_term output $sec1
+workspace $workspace_term output $prim
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="kitty"] $workspace_term
 assign [class="Alacritty"] $workspace_term
@@ -153,14 +153,14 @@ assign [class="Alacritty"] $workspace_term
 # Workspace SQL
 set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
-workspace $workspace_sql output $third1
+workspace $workspace_sql output $prim
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 assign [class="DBeaver"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat " :c"
 bindsym $mod+c workspace $workspace_chat
-workspace $workspace_chat output $third1
+workspace $workspace_chat output $prim
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^teams-for-linux"] $workspace_chat
 assign [class="^TelegramDesktop"] $workspace_chat
@@ -171,7 +171,7 @@ assign [class="WebCord"] $workspace_chat
 # Workspace MEDIA
 set $workspace_media " :u"
 bindsym $mod+u workspace $workspace_media
-workspace $workspace_media output $third1
+workspace $workspace_media output $prim
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
