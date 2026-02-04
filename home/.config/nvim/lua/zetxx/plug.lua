@@ -13,7 +13,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.nvim/plug/')
 
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
-Plug('nvim-treesitter/nvim-treesitter-refactor')
 Plug('ray-x/go.nvim')
 Plug('ray-x/starry.nvim')
 Plug('nvim-lua/plenary.nvim')
