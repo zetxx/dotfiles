@@ -105,6 +105,11 @@
 ],
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Night Owl",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#560202",
+    "activityBar.activeBackground": "#890101" ,
+    "activityBar.activeBorder": "#ff0000"
+  },
   "workbench.iconTheme": "vs-seti",
   "editor.codeLens": true,
   "workbench.statusBar.visible": true,
@@ -191,5 +196,10 @@
 "chat.commandCenter.enabled": false,
 "workbench.layoutControl.enabled": false,
 "workbench.navigationControl.enabled": false,
-"window.commandCenter": false
+"window.commandCenter": false,
+"update.showReleaseNotes": false,
+"typescript.updateImportsOnFileMove.enabled": "always",
+"workbench.settings.applyToAllProfiles": [
+
+]
 }
