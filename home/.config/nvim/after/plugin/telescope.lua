@@ -13,6 +13,9 @@ require('telescope').setup {
             ".git",
             ".vscode",
             "dist"
+        },
+        preview = {
+            treesitter = false,
         }
     }
 }
