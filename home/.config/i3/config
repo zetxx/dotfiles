@@ -125,7 +125,7 @@ set $workspace_ide "⌨ :e"
 workspace $workspace_ide output $prim
 bindsym $mod+e workspace $workspace_ide
 bindsym $mod+Shift+i move container to workspace $workspace_ide
-assign [class="VSCodium"] $workspace_ide
+assign [class="codium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
@@ -274,5 +274,4 @@ exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
-exec --no-startup-id corectrl --minimize-systray &
 exec --no-startup-id teams-for-linux &
