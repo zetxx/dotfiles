@@ -34,3 +34,5 @@ vim.opt.colorcolumn = "80"
 vim.opt.cul = true
 
 vim.opt.mouse = ""
+-- enable clipboard
+vim.opt.clipboard = "unnamedplus"
