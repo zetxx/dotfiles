@@ -39,3 +39,5 @@ home/.config/Code/code.lock
 home/.config/Code/Service Worker/**/*
 home/.config/Code/WebStorage/**/*
 home/.config/Code/DIPS
+home/.config/Code/Local*
+home/.config/Code/User/chatLanguageModels.json
