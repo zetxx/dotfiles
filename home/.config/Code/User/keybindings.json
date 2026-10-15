@@ -1,0 +1,37 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "ctrl+shift+up",                "command": "editor.action.moveLinesUpAction",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+shift+down",              "command": "editor.action.moveLinesDownAction",
+                                     "when": "editorTextFocus" },
+    { "key": "alt+shift+down",       "command": "editor.action.insertCursorBelow",
+                                     "when": "editorTextFocus" },
+    { "key": "alt+shift+up",         "command": "editor.action.insertCursorAbove",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+r",                    "command": "workbench.action.debug.restart",
+                                     "when": "inDebugMode" },
+    { "key": "ctrl+shift+d",   "command": "editor.action.copyLinesDownAction",
+                                     "when": "editorTextFocus" },
+    { "key": "undefined",                "command": "editor.action.addSelectionToNextFindMatch",
+                                     "when": "editorFocus" },
+    { "key": "ctrl+up",                "command": "extension.changeCase.upperFirst",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+down",                "command": "extension.changeCase.lowerFirst",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+w",                "command": "workbench.action.closeActiveEditor" },
+    { "key": "alt+w",                "command": "expand_region",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+;",               "command": "workbench.action.debug.run",
+                                     "when": "!inDebugMode" },
+    { "key": "ctrl+shift+alt+f",   "command": "eslint.fixAllProblems",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+[+]",               "command": "workbench.action.toggleSidebarVisibility" },
+    {
+        "key": "ctrl+b",
+        "command": "extension.selectTextInBracket"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "revealInExplorer"
+    }
+]

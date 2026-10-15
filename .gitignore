@@ -36,3 +36,5 @@ home/.config/Code/Cookies
 home/.config/Code/Cookies-journal
 home/.config/Code/SharedStorage-wal
 home/.config/Code/code.lock
+home/.config/Code/Service Worker/**/*
+home/.config/Code/WebStorage/**/*
