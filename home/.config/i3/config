@@ -33,9 +33,9 @@ bindsym $mod+Shift+q kill
 
 # start custom dmenu (a program launcher)
 # git clone https://github.com/DaveDavenport/rofi-themes.git ~/.config/rofi-custom
-bindsym $mod+Shift+d exec rofi -show run 
-bindsym $mod+d exec rofi -show drun
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Shift+d exec rofi -show run -dpi 1
+bindsym $mod+d exec rofi -show drun -dpi 1
+bindsym $mod+Tab exec rofi -show window -dpi 1
 
 # change focus
 bindsym $mod+j focus left
@@ -114,9 +114,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+m move workspace to output left
 bindsym $mod+n move workspace to output right
 
-set $prim eDP-1
-set $sec1 DisplayPort-3
-set $third1 DisplayPort-4
+set $prim DP-3
 
 #Workspace definition
 ##       
@@ -129,7 +127,7 @@ assign [class="codium"] $workspace_ide
 
 # Workspace WWW
 set $workspace_www " :w"
-workspace $workspace_www output $third1
+workspace $workspace_www output $prim
 bindsym $mod+w workspace $workspace_www
 bindsym $mod+Shift+w move container to workspace $workspace_www
 assign [class="Chromium"] $workspace_www
@@ -138,7 +136,7 @@ assign [class="^Opera$"] $workspace_www
 
 # Workspace VIRT
 set $workspace_virt " :b"
-workspace $workspace_virt output $third1
+workspace $workspace_virt output $prim
 bindsym $mod+b workspace $workspace_virt
 bindsym $mod+Shift+b move container to workspace $workspace_virt
 assign [class="Lens"] $workspace_virt
@@ -147,7 +145,7 @@ assign [class="VirtualBox"] $workspace_virt
 # Workspace Terminal
 set $workspace_term " :t"
 bindsym $mod+t workspace $workspace_term
-workspace $workspace_term output $sec1
+workspace $workspace_term output $prim
 bindsym $mod+Shift+t move container to workspace $workspace_term
 assign [class="kitty"] $workspace_term
 assign [class="Alacritty"] $workspace_term
@@ -155,14 +153,14 @@ assign [class="Alacritty"] $workspace_term
 # Workspace SQL
 set $workspace_sql " :s"
 bindsym $mod+s workspace $workspace_sql
-workspace $workspace_sql output $third1
+workspace $workspace_sql output $prim
 bindsym $mod+Shift+s move container to workspace $workspace_sql
 assign [class="DBeaver"] $workspace_sql
 
 # Workspace CHAT
 set $workspace_chat " :c"
 bindsym $mod+c workspace $workspace_chat
-workspace $workspace_chat output $third1
+workspace $workspace_chat output $prim
 bindsym $mod+Shift+c move container to workspace $workspace_chat
 assign [class="^teams-for-linux"] $workspace_chat
 assign [class="^TelegramDesktop"] $workspace_chat
@@ -173,7 +171,7 @@ assign [class="WebCord"] $workspace_chat
 # Workspace MEDIA
 set $workspace_media " :u"
 bindsym $mod+u workspace $workspace_media
-workspace $workspace_media output $third1
+workspace $workspace_media output $prim
 bindsym $mod+Shift+u move container to workspace $workspace_media
 assign [class=".*Music.*"] $workspace_media
 
@@ -216,10 +214,11 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-
+set $volumepath ~/i3-volume
+set $volumestep 2
 #title requires - i3ipc-python-git-latest
 bar {
-    status_command bumblebee-status -m title brightness battery date time layout_xkb dunst pasink pasource -p date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=25 battery.critical=18 interval=5 -t dracula-powerline
+    status_command bumblebee-status -m title date dunstctl time layout_xkb pasink pasource -p dunstctl.disabled="True" date.left-click="gsimplecal" time.format="%H:%M CW %V" date.format="%a, %b %d %Y" layout.lang=us battery.warning=24 battery.critical=18 interval=5 -t dracula-powerline
     font pango:Inconsolata Regular 10
     position          top
     tray_output       primary
@@ -243,9 +242,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Audio
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec $volumepath/volume -anp -i $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioLowerVolume exec $volumepath/volume -anp -d $volumestep -t $statuscmd -u $statussig
+bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
 
 set $Locker i3lock-fancy -p && sleep 1
 
@@ -265,13 +264,14 @@ mode "$mode_system" {
 
 bindsym $mod+Shift+e mode "$mode_system"
 
-exec --no-startup-id ~/screens.sh  &
-exec --no-startup-id copyq &
-exec --no-startup-id xautolock -time 30 -locker "i3lock-fancy -p" &
+#exec --no-startup-id xautolock -time 30 -locker "i3lock-fancy -p" &
+exec --no-startup-id sh -c 'sleep 0.5; xrandr --output DP-3 --mode 3840x2160 --rate 120 --primary --output DP-2 --mode 640x480 --pos 0x6000' &
 exec --no-startup-id /usr/bin/lxpolkit &
 exec --no-startup-id nm-applet &
 exec --no-startup-id clipmenud &
 exec --no-startup-id redshift &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id pasystray &
-exec --no-startup-id teams-for-linux &
+exec --no-startup-id corectrl --minimize-systray &
+exec --no-startup-id steam -silent &
+exec --no-startup-id feh --bg-max ~/wp.jpg &

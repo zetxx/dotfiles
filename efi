@@ -1,0 +1,17 @@
+mkfs.fat -F32 /dev/sda1
+
+mount /dev/sda3 /mnt
+
+pacstrap /mnt base linux linux-firmware
+
+arch-chroot /mnt
+
+mkdir /boot/EFI
+
+mount /dev/sda1 /boot/EFI
+
+mkinitcpio -P
+
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+
+grub-mkconfig -o /boot/grub/grub.cfg
